@@ -1,0 +1,80 @@
+.TH FIX.5.0SP2 "" "" "Tag #102"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+102 (tag102.html)
+CxlRejReason (tag102.html)
+\@CxlRejRsn
+int
+.PP
+Code to identify reason for cancel rejection.
+0
+=
+.PP
+Too late to cancel
+1
+=
+.PP
+Unknown order
+2
+=
+.PP
+Broker / Exchange Option
+3
+=
+.PP
+Order already in Pending Cancel or Pending Replace status
+4
+=
+.PP
+Unable to process Order Mass Cancel Request
+5
+=
+.PP
+OrigOrdModTime (586) did not match last TransactTime (60) of order
+6
+=
+.PP
+Duplicate ClOrdID (11) received
+7
+=
+.PP
+Price exceeds current price
+8
+=
+.PP
+Price exceeds current price band
+18
+=
+.PP
+Invalid price increment
+99
+=
+.PP
+Other
+.PP
+   *   *   *   *   *
+Used in messages:
+[OrderCancelReject (body_494857.html?find=CxlRejReason)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

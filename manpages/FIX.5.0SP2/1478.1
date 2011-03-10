@@ -1,0 +1,60 @@
+.TH FIX.5.0SP2 "" "" "Tag #1478"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+1478 (tag1478.html)
+StrikePriceDeterminationMethod (tag1478.html)
+\@StrkPxDtrmnMeth
+int
+.PP
+Specifies how the strike price is determined at the point of option
+exercise. The strike may be fixed throughout the life of the
+option, set at expiration to the value of the underlying, set to
+the average value of the underlying , or set to the optimal value
+of the underlying.
+.PP
+Conditionally, required if value is other than "fixed".
+1
+=
+.PP
+Fixed Strike
+2
+=
+.PP
+Strike set at expiration to underlying or other value (lookback
+floating)
+3
+=
+.PP
+Strike set to average of underlying settlement price across the
+life of the option
+4
+=
+.PP
+Strike set to optimal value
+.PP
+   *   *   *   *   *
+Used in messages:
+.PP
+   *   *   *   *   *
+Used in components:
+[Instrument (body_49484851.html?find=StrikePriceDeterminationMethod)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

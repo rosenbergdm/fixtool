@@ -1,0 +1,59 @@
+.TH FIX.4.3 "" "" "Tag #64"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+64 (tag64.html)
+FutSettDate (tag64.html)
+LocalMktDate
+.PP
+Specific date of trade settlement (SettlementDate) in YYYYMMDD
+format.
+.PP
+If present, this field overrides SettlmntTyp (63). This field is
+required if the value of SettlmntTyp (63) is 6 (Future) or 8
+(Sellers Option). This field must be omitted if the value of
+SettlmntTyp (63) is 7 (When and If Issued)
+.PP
+(expressed in local time at place of settlement)
+.PP
+   *   *   *   *   *
+Used in messages:
+[Allocation (body_495774.html?find=FutSettDate)]
+[BidRequest (body_5252107.html?find=FutSettDate)]
+[BidResponse (body_5253108.html?find=FutSettDate)]
+[CrossOrderCancelReplaceRequest (body_5352116.html?find=FutSettDate)]
+[ExecutionReport (body_5756.html?find=FutSettDate)]
+[MassQuote (body_5250105.html?find=FutSettDate)]
+[MassQuoteAcknowledgement (body_515398.html?find=FutSettDate)]
+[MultilegOrderCancelReplaceRequest (body_54506567.html?find=FutSettDate)]
+[NewOrderCross (body_5350115.html?find=FutSettDate)]
+[NewOrderList (body_495369.html?find=FutSettDate)]
+[NewOrderMultileg (body_54496566.html?find=FutSettDate)]
+[NewOrderSingle (body_495268.html?find=FutSettDate)]
+[OrderCancelReplaceRequest (body_495571.html?find=FutSettDate)]
+[Quote (body_505583.html?find=FutSettDate)]
+[QuoteRequest (body_505482.html?find=FutSettDate)]
+[QuoteRequestReject (body_54546571.html?find=FutSettDate)]
+[QuoteStatusReport (body_54566573.html?find=FutSettDate)]
+[TradeCaptureReport (body_54526569.html?find=FutSettDate)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

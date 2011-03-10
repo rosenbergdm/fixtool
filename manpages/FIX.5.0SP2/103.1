@@ -1,0 +1,115 @@
+.TH FIX.5.0SP2 "" "" "Tag #103"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+103 (tag103.html)
+OrdRejReason (tag103.html)
+\@RejRsn
+int
+.PP
+Code to identify reason for order rejection. Note: Values 3, 4, and
+5 will be used when rejecting an order due to pre-allocation
+information errors.
+0
+=
+.PP
+Broker / Exchange option
+1
+=
+.PP
+Unknown symbol
+2
+=
+.PP
+Exchange closed
+3
+=
+.PP
+Order exceeds limit
+4
+=
+.PP
+Too late to enter
+5
+=
+.PP
+Unknown order
+6
+=
+.PP
+Duplicate Order (e.g. dupe ClOrdID)
+7
+=
+.PP
+Duplicate of a verbally communicated order
+8
+=
+.PP
+Stale order
+9
+=
+.PP
+Trade along required
+10
+=
+.PP
+Invalid Investor ID
+11
+=
+.PP
+Unsupported order characteristic
+12
+=
+.PP
+Surveillence Option
+13
+=
+.PP
+Incorrect quantity
+14
+=
+.PP
+Incorrect allocated quantity
+15
+=
+.PP
+Unknown account(s)
+16
+=
+.PP
+Price exceeds current price band
+18
+=
+.PP
+Invalid price increment
+99
+=
+.PP
+Other
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=OrdRejReason)]
+.PP
+   *   *   *   *   *
+Used in components:
+[OrdListStatGrp (body_50485155.html?find=OrdRejReason)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

@@ -1,0 +1,67 @@
+.TH FIX.5.0SP2 "" "" "Tag #808"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+808 (tag808.html)
+AllocIntermedReqType (tag808.html)
+\@IntermedReqTyp
+int
+.PP
+Response to allocation to be communicated to a counterparty through
+an intermediary, i.e. clearing house. Used in conjunction with
+AllocType = "Request to Intermediary" and AllocReportType =
+"Request to Intermediary"
+1
+=
+.PP
+Pending Accept
+2
+=
+.PP
+Pending Release
+3
+=
+.PP
+Pending Reversal
+4
+=
+.PP
+Accept
+5
+=
+.PP
+Block Level Reject
+6
+=
+.PP
+Account Level Reject
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=AllocIntermedReqType)]
+[AllocationInstructionAck (body_505280.html?find=AllocIntermedReqType)]
+[AllocationInstructionAlert (body_57566677.html?find=AllocIntermedReqType)]
+[AllocationReport (body_55566583.html?find=AllocIntermedReqType)]
+[AllocationReportAck (body_55576584.html?find=AllocIntermedReqType)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

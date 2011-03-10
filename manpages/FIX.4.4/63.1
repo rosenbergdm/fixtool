@@ -1,0 +1,107 @@
+.TH FIX.4.4 "" "" "Tag #63"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+63 (tag63.html)
+SettlType (tag63.html)
+\@SettlTyp
+char
+.PP
+Indicates order settlement period. If present, SettlDate (64)
+overrides this field. If both SettlType (63) and SettDate (64) are
+omitted, the default for SettlType (63) is 0 (Regular)
+.PP
+Regular is defined as the default settlement period for the
+particular security on the exchange of execution.
+.PP
+In Fixed Income the contents of this field may influence the
+instrument definition if the SecurityID (48) is ambiguous. In the
+US an active Treasury offering may be re-opened, and for a time one
+CUSIP will apply to both the current and "when-issued" securities.
+Supplying a value of "7" clarifies the instrument description; any
+other value or the absence of this field should cause the
+respondent to default to the active issue.
+0
+=
+.PP
+Regular
+1
+=
+.PP
+Cash
+2
+=
+.PP
+NextDay
+3
+=
+.PP
+T2
+4
+=
+.PP
+T3
+5
+=
+.PP
+T4
+6
+=
+.PP
+Future
+7
+=
+.PP
+WhenIssued
+8
+=
+.PP
+T5
+9
+=
+.PP
+T1
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=SettlType)]
+[AllocationReport (body_55566583.html?find=SettlType)]
+[Confirmation (body_55486575.html?find=SettlType)]
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=SettlType)]
+[ExecutionReport (body_5756.html?find=SettlType)]
+[MultilegOrderCancelReplace (body_54506567.html?find=SettlType)]
+[NewOrderCross (body_5350115.html?find=SettlType)]
+[NewOrderMultileg (body_54496566.html?find=SettlType)]
+[NewOrderSingle (body_495268.html?find=SettlType)]
+[OrderCancelReplaceRequest (body_495571.html?find=SettlType)]
+[Quote (body_505583.html?find=SettlType)]
+[QuoteResponse (body_54576574.html?find=SettlType)]
+[QuoteStatusReport (body_54566573.html?find=SettlType)]
+[TradeCaptureReport (body_54526569.html?find=SettlType)]
+.PP
+   *   *   *   *   *
+Used in components:
+[BidCompReqGrp (body_50484852.html?find=SettlType)]
+[BidCompRspGrp (body_50484853.html?find=SettlType)]
+[ListOrdGrp (body_50485148.html?find=SettlType)]
+[QuotReqGrp (body_50485253.html?find=SettlType)]
+[QuotReqRjctGrp (body_50485255.html?find=SettlType)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

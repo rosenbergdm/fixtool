@@ -1,0 +1,61 @@
+.TH FIX.4.4 "" "" "Tag #37"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+37 (tag37.html)
+OrderID (tag37.html)
+\@OrdID
+String
+.PP
+Unique identifier for Order as assigned by sell-side (broker,
+exchange, ECN). Uniqueness must be guaranteed within a single
+trading day. Firms which accept multi-day orders should consider
+embedding a date within the OrderID field to assure uniqueness
+across days.
+.PP
+   *   *   *   *   *
+Used in messages:
+[CollateralAssignment (body_56526589.html?find=OrderID)]
+[CollateralInquiry (body_56556666.html?find=OrderID)]
+[CollateralInquiryAck (body_57506671.html?find=OrderID)]
+[CollateralReport (body_56546665.html?find=OrderID)]
+[CollateralRequest (body_56516588.html?find=OrderID)]
+[CollateralResponse (body_56536590.html?find=OrderID)]
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=OrderID)]
+[CrossOrderCancelRequest (body_5352117.html?find=OrderID)]
+[DontKnowTradeDK (body_505381.html?find=OrderID)]
+[Email (body_495167.html?find=OrderID)]
+[ExecutionReport (body_5756.html?find=OrderID)]
+[MultilegOrderCancelReplace (body_54506567.html?find=OrderID)]
+[OrderCancelReject (body_494857.html?find=OrderID)]
+[OrderCancelReplaceRequest (body_495571.html?find=OrderID)]
+[OrderCancelRequest (body_495470.html?find=OrderID)]
+[OrderMassCancelReport (body_5349114.html?find=OrderID)]
+[OrderStatusRequest (body_495672.html?find=OrderID)]
+[TradeCaptureReportRequest (body_54516568.html?find=OrderID)]
+.PP
+   *   *   *   *   *
+Used in components:
+[MDFullGrp (body_50485149.html?find=OrderID)]
+[MDIncGrp (body_50485150.html?find=OrderID)]
+[OrdAllocGrp (body_50485154.html?find=OrderID)]
+[TrdCapRptSideGrp (body_50485449.html?find=OrderID)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

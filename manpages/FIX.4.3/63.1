@@ -1,0 +1,97 @@
+.TH FIX.4.3 "" "" "Tag #63"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+63 (tag63.html)
+SettlmntTyp (tag63.html)
+char
+.PP
+Indicates order settlement period. If present, FutSettDate (64)
+overrides this field. If both SettlmntTyp (63) and FutSettDate (64)
+are omitted, the default for SettlmntTyp (63) is 0 (Regular)
+.PP
+Regular is defined as the default settlement period for the
+particular security on the exchange of execution.
+0
+=
+.PP
+Regular
+1
+=
+.PP
+Cash
+2
+=
+.PP
+Next Day
+3
+=
+.PP
+T+2
+4
+=
+.PP
+T+3
+5
+=
+.PP
+T+4
+6
+=
+.PP
+Future
+7
+=
+.PP
+When And If Issued
+8
+=
+.PP
+Sellers Option
+9
+=
+.PP
+T+ 5
+A
+=
+.PP
+T+1
+.PP
+   *   *   *   *   *
+Used in messages:
+[Allocation (body_495774.html?find=SettlmntTyp)]
+[BidRequest (body_5252107.html?find=SettlmntTyp)]
+[BidResponse (body_5253108.html?find=SettlmntTyp)]
+[CrossOrderCancelReplaceRequest (body_5352116.html?find=SettlmntTyp)]
+[ExecutionReport (body_5756.html?find=SettlmntTyp)]
+[MultilegOrderCancelReplaceRequest (body_54506567.html?find=SettlmntTyp)]
+[NewOrderCross (body_5350115.html?find=SettlmntTyp)]
+[NewOrderList (body_495369.html?find=SettlmntTyp)]
+[NewOrderMultileg (body_54496566.html?find=SettlmntTyp)]
+[NewOrderSingle (body_495268.html?find=SettlmntTyp)]
+[OrderCancelReplaceRequest (body_495571.html?find=SettlmntTyp)]
+[Quote (body_505583.html?find=SettlmntTyp)]
+[QuoteRequest (body_505482.html?find=SettlmntTyp)]
+[QuoteRequestReject (body_54546571.html?find=SettlmntTyp)]
+[TradeCaptureReport (body_54526569.html?find=SettlmntTyp)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

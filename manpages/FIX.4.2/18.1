@@ -1,0 +1,152 @@
+.TH FIX.4.2 "" "" "Tag #18"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+18 (tag18.html)
+ExecInst (tag18.html)
+MultipleValueString
+.PP
+Instructions for order handling on exchange trading floor. If more
+than one instruction is applicable to an order, this field can
+contain multiple instructions separated by space.
+0
+=
+.PP
+Stay on offerside
+1
+=
+.PP
+Not held
+2
+=
+.PP
+Work
+3
+=
+.PP
+Go along
+4
+=
+.PP
+Over the day
+5
+=
+.PP
+Held
+6
+=
+.PP
+Participate don\[aq]t initiate
+7
+=
+.PP
+Strict scale
+8
+=
+.PP
+Try to scale
+9
+=
+.PP
+Stay on bidside
+A
+=
+.PP
+No cross (cross is forbidden)
+B
+=
+.PP
+OK to cross
+C
+=
+.PP
+Call first
+D
+=
+.PP
+Percent of volume (indicates that the sender does not want to be
+all of the volume on the floor vs. a specific percentage)
+E
+=
+.PP
+Do not increase - DNI
+F
+=
+.PP
+Do not reduce - DNR
+G
+=
+.PP
+All or none - AON
+I
+=
+.PP
+Institutions only
+L
+=
+.PP
+Last peg (last sale)
+M
+=
+.PP
+Mid-price peg (midprice of inside quote)
+N
+=
+.PP
+Non-negotiable
+O
+=
+.PP
+Opening peg
+P
+=
+.PP
+Market peg
+R
+=
+.PP
+Primary peg (primary market - buy at bid/sell at offer)
+S
+=
+.PP
+Suspend
+T
+=
+.PP
+Fixed Peg to Local best bid or offer at time of order
+U
+=
+.PP
+Customer Display Instruction (Rule11Ac1-1/4)
+V
+=
+.PP
+Netting (for Forex)
+W
+=
+.PP
+Peg to VWAP
+.PP
+   *   *   *   *   *
+Used in messages:
+[Execution Report (body_5756.html?find=ExecInst)]
+[Market Data-Incremental Refresh (body_514988.html?find=ExecInst)]
+[Market Data-Snapshot/Full Refresh (body_514887.html?find=ExecInst)]
+[Order - List (body_495369.html?find=ExecInst)]
+[Order - Single (body_495268.html?find=ExecInst)]
+[Order Cancel/Replace Request (body_495571.html?find=ExecInst)]
+.PP
+   *   *   *   *   *
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

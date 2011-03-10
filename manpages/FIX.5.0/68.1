@@ -1,0 +1,42 @@
+.TH FIX.5.0 "" "" "Tag #68"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+68 (tag68.html)
+TotNoOrders (tag68.html)
+\@TotNoOrds
+int
+.PP
+Total number of list order entries across all messages. Should be
+the sum of all NoOrders (73) in each message that has repeating
+list order entries related to the same ListID (66). Used to support
+fragmentation.
+.PP
+(Prior to FIX 4.2 this field was named "ListNoOrds")
+.PP
+   *   *   *   *   *
+Used in messages:
+[ListStatus (body_505178.html?find=TotNoOrders)]
+[NewOrderList (body_495369.html?find=TotNoOrders)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

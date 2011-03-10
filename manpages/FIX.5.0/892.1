@@ -1,0 +1,41 @@
+.TH FIX.5.0 "" "" "Tag #892"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+892 (tag892.html)
+TotNoAllocs (tag892.html)
+\@TotNoAllocs
+int
+.PP
+Total number of NoAlloc entries across all messages. Should be the
+sum of all NoAllocs in each message that has repeating NoAlloc
+entries related to the same AllocID or AllocReportID. Used to
+support fragmentation.
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=TotNoAllocs)]
+[AllocationInstructionAlert (body_57566677.html?find=TotNoAllocs)]
+[AllocationReport (body_55566583.html?find=TotNoAllocs)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

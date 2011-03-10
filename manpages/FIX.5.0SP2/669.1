@@ -1,0 +1,45 @@
+.TH FIX.5.0SP2 "" "" "Tag #669"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+669 (tag669.html)
+LastParPx (tag669.html)
+\@LastParPx
+Price
+.PP
+Last price expressed in percent-of-par. Conditionally required for
+Fixed Income trades when LastPx (31) is expressed in Yield, Spread,
+Discount or any other type.
+.PP
+Usage: Execution Report and Allocation Report repeating executions
+block (from sellside).
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionAcknowledgement (body_57576678.html?find=LastParPx)]
+[ExecutionReport (body_5756.html?find=LastParPx)]
+[TradeCaptureReport (body_54526569.html?find=LastParPx)]
+[TradeCaptureReportAck (body_55556582.html?find=LastParPx)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ExecAllocGrp (body_50484952.html?find=LastParPx)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

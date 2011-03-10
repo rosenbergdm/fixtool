@@ -1,0 +1,45 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Component BidDescReqGrp</title><LINK REL="STYLESHEET" TYPE="text/css" HREF="../../fixstyle.css"><script type="text/javascript">					
+				function expand(elem) {
+					var tb;
+					tb = document.getElementById(elem);	
+					if (tb!=null) {
+						if (tb.style.display == "")	{ 
+							 tb.style.display = "none"; 
+						} else {
+							 tb.style.display = ""; 
+						 }
+					}
+					tb = document.getElementById(elem+"_inl");	
+					if (tb.style.display == "inline")	{ 
+						tb.style.display = "none"; 
+					} else {
+						 tb.style.display = "inline"; 
+					 }					 
+				}		
+			
+				function getparam(name) {
+				  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+				  var regexS = "[\\?&]"+name+"=([^&#]*)";
+				  var regex = new RegExp( regexS );
+				  var results = regex.exec(window.location.href);
+				  if( results == null )
+					return "";
+				  else
+					return results[1];
+				}
+				function find_string() {				
+					var strFound;
+					var str = getparam('find');
+					if (str=='') return;
+					if (navigator.appName=="Netscape") {				
+						self.find(str);
+					}
+					if (navigator.appName.indexOf("Microsoft")!=-1) {
+					   TRange=self.document.body.createTextRange();
+					   strFound=TRange.findText(str);
+					   if (strFound) TRange.select();
+					}
+				}			
+</script></head><body onload="find_string()"><h2>FIX.4.4 Component<br>BidDescReqGrp</h2><table class="HeaderTable"><tr><td class="MsgINDENT0Lines"></td><th class="MsgTagHdrContent">Tag or Component</th><th class="MsgFldHdrContent">Field Name</th><th class="MsgXMLname Hdr content">FIXML name</th><th class="MsgRqdHdrContent">Req'd</th><th class="MsgCmtHdrContent">Comments</th><th class="MsgDeprHdrContent">Depr.</th></tr></table><table class="BodyTable"><tr class="NotDepr"><td class="MsgGS0Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag398.html"><i>Repeating Group</i>&nbsp;398</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag398.html"><b>NoBidDescriptors</b></a></td><td class="MsgXMLnameContent">@NoBidDescptrs</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr></table><table class="BodyTable"><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag399.html">399</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag399.html">BidDescriptorType</a></td><td class="MsgXMLnameContent">@BidDescptrTyp</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag400.html">400</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag400.html">BidDescriptor</a></td><td class="MsgXMLnameContent">@BidDescptr</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag401.html">401</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag401.html">SideValueInd</a></td><td class="MsgXMLnameContent">@SideValuInd</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag404.html">404</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag404.html">LiquidityValue</a></td><td class="MsgXMLnameContent">@LqdtyValu</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag441.html">441</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag441.html">LiquidityNumSecurities</a></td><td class="MsgXMLnameContent">@LqdtyNumSecurities</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag402.html">402</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag402.html">LiquidityPctLow</a></td><td class="MsgXMLnameContent">@LqdtyPctLow</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag403.html">403</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag403.html">LiquidityPctHigh</a></td><td class="MsgXMLnameContent">@LqdtyPctHigh</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag405.html">405</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag405.html">EFPTrackingError</a></td><td class="MsgXMLnameContent">@EFPTrkngErr</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag406.html">406</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag406.html">FairValue</a></td><td class="MsgXMLnameContent">@FairValu</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag407.html">407</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag407.html">OutsideIndexPct</a></td><td class="MsgXMLnameContent">@OutsideNdxPct</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag408.html">408</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag408.html">ValueOfFutures</a></td><td class="MsgXMLnameContent">@ValuOfFuts</td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr></table><table class="HeaderTable"><tr><td class="MsgGE0Lines"></td><td class="MsgTagContent"><i>end Repeating Group</i></td><td class="MsgFldContent"></td><td class="MsgXMLnameContent"></td><td class="MsgRqdContent"></td><td class="MsgCmtContent"></td><td class="MsgDeprContent"></td></tr></table><hr><hr>
+				Used in messages: <div class="TagUsedIn">[<A href="body_5252107.html?find=BidDescReqGrp" target="mainFrame">BidRequest</A>] </div><hr>						
+				Used in components: <div class="TagUsedIn"></div><p></p><p></p><table><tr><td class="Horiz" id="footer" colspan="2"><ul class="Menu"><li id="copyright">© 2007 FIX Protocol Limited</li><li><a href="http://www.fixprotocol.org/contact.shtml" target="_blank">Contact us</a></li><li><a href="http://www.fixprotocol.org/copyright.shtml" target="_blank">Copyright and Acceptable Use policy</a></li><li><a href="http://www.fixprotocol.org/privacy.shtml" target="_blank">Privacy policy</a></li></ul></td></tr></table></body></html>

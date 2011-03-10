@@ -1,0 +1,53 @@
+.TH FIX.4.4 "" "" "Tag #200"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+200 (tag200.html)
+MaturityMonthYear (tag200.html)
+\@MMY
+MonthYear
+.PP
+Can be used with standardized derivatives vs. the MaturityDate (54)
+field. Month and Year of the maturity (used for standardized
+futures and options).
+.PP
+Format:
+.PP
+YYYYMM (i.e. 199903)
+.PP
+YYYYMMDD (20030323)
+.PP
+YYYYMMwN (200303w) for week
+.PP
+A specific date or can be appended to the MaturityMonthYear. For
+instance, if multiple standard products exist that mature in the
+same Year and Month, but actually mature at a different time, a
+value can be appended, such as "w" or "w2" to indicate week as
+opposed to week 2 expiration. Likewise, the date (0-3) can be
+appended to indicate a specific expiration (maturity date).
+.PP
+   *   *   *   *   *
+Used in messages:
+.PP
+   *   *   *   *   *
+Used in components:
+[Instrument (body_49484851.html?find=MaturityMonthYear)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

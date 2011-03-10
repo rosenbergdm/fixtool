@@ -1,0 +1,262 @@
+.TH FIX.5.0SP2 "" "" "Tag #1308"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+1308 (tag1308.html)
+ExecInstValue (tag1308.html)
+\@ExecInstValu
+char
+.PP
+Indicates execution instructions that are valid for the specified
+market segment
+0
+=
+.PP
+Stay on offer side
+1
+=
+.PP
+Not held
+2
+=
+.PP
+Work
+3
+=
+.PP
+Go along
+4
+=
+.PP
+Over the day
+5
+=
+.PP
+Held
+6
+=
+.PP
+Participant don\[aq]t initiate
+7
+=
+.PP
+Strict scale
+8
+=
+.PP
+Try to scale
+9
+=
+.PP
+Stay on bid side
+A
+=
+.PP
+No cross (cross is forbidden)
+B
+=
+.PP
+OK to cross
+C
+=
+.PP
+Call first
+D
+=
+.PP
+Percent of volume (indicates that the sender does not want to be
+all of the volume on the floor vs. a specific percentage)
+E
+=
+.PP
+Do not increase - DNI
+F
+=
+.PP
+Do not reduce - DNR
+G
+=
+.PP
+All or none - AON
+H
+=
+.PP
+Reinstate on system failure (mutually exclusive with Q and l)
+I
+=
+.PP
+Institutions only
+J
+=
+.PP
+Reinstate on Trading Halt (mutually exclusive with K and m)
+K
+=
+.PP
+Cancel on Trading Halt (mutually exclusive with J and m)
+L
+=
+.PP
+Last peg (last sale)
+M
+=
+.PP
+Mid-price peg (midprice of inside quote)
+N
+=
+.PP
+Non-negotiable
+O
+=
+.PP
+Opening peg
+P
+=
+.PP
+Market peg
+Q
+=
+.PP
+Cancel on system failure (mutually exclusive with H and l)
+R
+=
+.PP
+Primary peg (primary market - buy at bid/sell at offer)
+S
+=
+.PP
+Suspend
+T
+=
+.PP
+Fixed Peg to Local best bid or offer at time of order
+U
+=
+.PP
+Customer Display Instruction (Rule 11Ac1-1/4)
+V
+=
+.PP
+Netting (for Forex)
+W
+=
+.PP
+Peg to VWAP
+X
+=
+.PP
+Trade Along
+Y
+=
+.PP
+Try To Stop
+Z
+=
+.PP
+Cancel if not best
+a
+=
+.PP
+Trailing Stop Peg
+b
+=
+.PP
+Strict Limit (No price improvement)
+c
+=
+.PP
+Ignore Price Validity Checks
+d
+=
+.PP
+Peg to Limit Price
+e
+=
+.PP
+Work to Target Strategy
+f
+=
+.PP
+Intermarket Sweep
+g
+=
+.PP
+External Routing Allowed
+h
+=
+.PP
+External Routing Not Allowed
+i
+=
+.PP
+Imbalance Only
+j
+=
+.PP
+Single execution requested for block trade
+k
+=
+.PP
+Best Execution
+l
+=
+.PP
+Suspend on system failure (mutually exclusive with H and Q)
+m
+=
+.PP
+Suspend on Trading Halt (mutually exclusive with J and K)
+n
+=
+.PP
+Reinstate on connection loss (mutually exclusive with o and p)
+o
+=
+.PP
+Cancel on connection loss (mutually exclusive with n and p)
+p
+=
+.PP
+Suspend on connection loss (mutually exclusive with n and o)
+q
+=
+.PP
+Release from suspension (mutually exclusive with S)
+r
+=
+.PP
+Execute as delta neutral using volatility provided
+s
+=
+.PP
+Execute as duration neutral
+t
+=
+.PP
+Execute as FX neutral
+.PP
+   *   *   *   *   *
+Used in messages:
+.PP
+   *   *   *   *   *
+Used in components:
+[ExecInstRules (body_50495054.html?find=ExecInstValue)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

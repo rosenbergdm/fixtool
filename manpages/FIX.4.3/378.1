@@ -1,0 +1,73 @@
+.TH FIX.4.3 "" "" "Tag #378"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+378 (tag378.html)
+ExecRestatementReason (tag378.html)
+int
+.PP
+Code to identify reason for an ExecutionRpt message sent with
+ExecType=Restated or used when communicating an unsolicited cancel.
+0
+=
+.PP
+GT Corporate action
+1
+=
+.PP
+GT renewal / restatement (no corporate action)
+2
+=
+.PP
+Verbal change
+3
+=
+.PP
+Repricing of order
+4
+=
+.PP
+Broker option
+5
+=
+.PP
+Partial decline of OrderQty (e.g. exchange-initiated partial
+cancel)
+6
+=
+.PP
+Cancel on Trading Halt
+7
+=
+.PP
+Cancel on System Failure
+8
+=
+.PP
+Market (Exchange) Option
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=ExecRestatementReason)]
+[TradeCaptureReport (body_54526569.html?find=ExecRestatementReason)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

@@ -1,0 +1,56 @@
+.TH FIX.4.3 "" "" "Tag #582"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+582 (tag582.html)
+CustOrderCapacity (tag582.html)
+int
+.PP
+Capacity of customer placing the order
+.PP
+1 = Member trading for their own account
+.PP
+2 = Clearing Firm trading for its proprietary account
+.PP
+3 = Member trading for another member
+.PP
+4 = All other
+.PP
+Primarily used by futures exchanges to indicate the CTICode
+(customer type indicator) as required by the US CFTC (Commodity
+Futures Trading Commission).
+.PP
+   *   *   *   *   *
+Used in messages:
+[CrossOrderCancelReplaceRequest (body_5352116.html?find=CustOrderCapacity)]
+[ExecutionReport (body_5756.html?find=CustOrderCapacity)]
+[MultilegOrderCancelReplaceRequest (body_54506567.html?find=CustOrderCapacity)]
+[NewOrderCross (body_5350115.html?find=CustOrderCapacity)]
+[NewOrderList (body_495369.html?find=CustOrderCapacity)]
+[NewOrderMultileg (body_54496566.html?find=CustOrderCapacity)]
+[NewOrderSingle (body_495268.html?find=CustOrderCapacity)]
+[OrderCancelReplaceRequest (body_495571.html?find=CustOrderCapacity)]
+[Quote (body_505583.html?find=CustOrderCapacity)]
+[QuoteStatusReport (body_54566573.html?find=CustOrderCapacity)]
+[TradeCaptureReport (body_54526569.html?find=CustOrderCapacity)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

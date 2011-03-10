@@ -1,0 +1,45 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Message XML_non_FIX</title><LINK REL="STYLESHEET" TYPE="text/css" HREF="../../fixstyle.css"><script type="text/javascript">							
+				var TRange=null;
+				
+				function expand(elem) {
+					var tb;
+					tb = document.getElementById(elem);	
+					if (tb!=null) {
+						if (tb.style.display == "")	{ 
+							 tb.style.display = "none"; 
+						} else {
+							 tb.style.display = ""; 
+						 }
+					}
+					tb = document.getElementById(elem+"_inl");	
+					if (tb.style.display == "inline")	{ 
+						tb.style.display = "none"; 
+					} else {
+						 tb.style.display = "inline"; 
+					 }		
+				}				
+				function getparam( name )	{
+				  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+				  var regexS = "[\\?&]"+name+"=([^&#]*)";
+				  var regex = new RegExp( regexS );
+				  var results = regex.exec(window.location.href);
+				  if( results == null )
+					return "";
+				  else
+					return results[1];
+				}
+				function find_string() {				
+					var strFound;
+					var str = getparam('find');
+					if (str=='') return;
+					if (navigator.appName=="Netscape") {	
+<!-- https://developer.mozilla.org/En/DOM/Window.find does not appear to apply -->		
+<!--					self.find(str, true,false,false,true,false,false); -->
+					}
+					if (navigator.appName.indexOf("Microsoft")!=-1) {
+					   TRange=self.document.body.createTextRange();
+					   strFound=TRange.findText(str,1,2);
+					   if (strFound) TRange.select();
+					}
+				}						
+</script></head><body onload="find_string()"><h2>FIX.4.4 Message</h2><h3>XML_non_FIX&nbsp;[type 'n']</h3><table class="HeaderTable"><tr><td class="MsgINDENT0Lines"></td><th class="MsgTagHdrContent">Tag or Component</th><th class="MsgFldHdrContent">Field Name</th><th class="MsgXMLnameHdrContent">FIXML name</th><th class="MsgRqdHdrContent">Req'd</th><th class="MsgCmtHdrContent">Comments</th><th class="MsgDeprHdrContent">Depr.</th></tr></table><p></p><p></p><table><tr><td class="Horiz" id="footer" colspan="2"><ul class="Menu"><li id="copyright">© 2007 FIX Protocol Limited</li><li><a href="http://www.fixprotocol.org/contact.shtml" target="_blank">Contact us</a></li><li><a href="http://www.fixprotocol.org/copyright.shtml" target="_blank">Copyright and Acceptable Use policy</a></li><li><a href="http://www.fixprotocol.org/privacy.shtml" target="_blank">Privacy policy</a></li></ul></td></tr></table></body></html>

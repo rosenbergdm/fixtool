@@ -1,0 +1,89 @@
+.TH FIX.5.0SP2 "" "" "Tag #59"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+59 (tag59.html)
+TimeInForce (tag59.html)
+\@TmInForce
+char
+.PP
+Specifies how long the order remains in effect. Absence of this
+field is interpreted as DAY. NOTE not applicable to CIV Orders.
+(see Volume : "Glossary" for value definitions)
+0
+=
+.PP
+Day (or session)
+1
+=
+.PP
+Good Till Cancel (GTC)
+2
+=
+.PP
+At the Opening (OPG)
+3
+=
+.PP
+Immediate Or Cancel (IOC)
+4
+=
+.PP
+Fill Or Kill (FOK)
+5
+=
+.PP
+Good Till Crossing (GTX)
+6
+=
+.PP
+Good Till Date (GTD)
+7
+=
+.PP
+At the Close
+8
+=
+.PP
+Good Through Crossing
+9
+=
+.PP
+At Crossing
+.PP
+   *   *   *   *   *
+Used in messages:
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=TimeInForce)]
+[ExecutionReport (body_5756.html?find=TimeInForce)]
+[MultilegOrderCancelReplace (body_54506567.html?find=TimeInForce)]
+[NewOrderCross (body_5350115.html?find=TimeInForce)]
+[NewOrderMultileg (body_54496566.html?find=TimeInForce)]
+[NewOrderSingle (body_495268.html?find=TimeInForce)]
+[OrderCancelReplaceRequest (body_495571.html?find=TimeInForce)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=TimeInForce)]
+[MDFullGrp (body_50485149.html?find=TimeInForce)]
+[MDIncGrp (body_50485150.html?find=TimeInForce)]
+[TimeInForceRules (body_50495055.html?find=TimeInForce)]
+[TradeReportOrderDetail (body_50495251.html?find=TimeInForce)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

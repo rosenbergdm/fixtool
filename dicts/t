@@ -1,0 +1,36 @@
+name: unix-compat
+version: 0.2
+id: unix-compat-0.2-2c2ef95f130082b2dbb971c24ef4ef3f
+license: BSD3
+copyright:
+maintainer: Jacob Stanley <jacob@stanley.io>
+stability:
+homepage: http://github.com/jystic/unix-compat
+package-url:
+description: This package provides portable implementations of parts
+             of the unix package. This package re-exports the unix
+             package when available. When it isn't available,
+             portable implementations are used.
+category: System
+author: Björn Bringert, Duncan Coutts, Jacob Stanley
+exposed: True
+exposed-modules: System.PosixCompat System.PosixCompat.Extensions
+                 System.PosixCompat.Files System.PosixCompat.Time
+                 System.PosixCompat.Types System.PosixCompat.User
+hidden-modules:
+import-dirs: /usr/local/lib/unix-compat-0.2/ghc-6.12.1
+library-dirs: /usr/local/lib/unix-compat-0.2/ghc-6.12.1
+hs-libraries: HSunix-compat-0.2
+extra-libraries:
+extra-ghci-libraries:
+include-dirs: /usr/local/lib/unix-compat-0.2/ghc-6.12.1/include
+includes: HsUnixCompat.h
+depends: base-4.2.0.0-2cc27b7e43511c4ca001642a7f77a8f6
+         unix-2.4.0.0-8e61c0535997754b07872e3f3f8055ff
+hugs-options:
+cc-options:
+ld-options:
+framework-dirs:
+frameworks:
+haddock-interfaces: /usr/local/share/doc/unix-compat-0.2/html/unix-compat.haddock
+haddock-html: /usr/local/share/doc/unix-compat-0.2/html

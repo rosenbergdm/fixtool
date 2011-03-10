@@ -1,0 +1,141 @@
+.TH FIX.5.0SP2 "" "" "Tag #63"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+63 (tag63.html)
+SettlType (tag63.html)
+\@SettlTyp
+String
+.PP
+Indicates order settlement period. If present, SettlDate (64)
+overrides this field. If both SettlType (63) and SettDate (64) are
+omitted, the default for SettlType (63) is 0 (Regular)
+.PP
+Regular is defined as the default settlement period for the
+particular security on the exchange of execution.
+.PP
+In Fixed Income the contents of this field may influence the
+instrument definition if the SecurityID (48) is ambiguous. In the
+US an active Treasury offering may be re-opened, and for a time one
+CUSIP will apply to both the current and "when-issued" securities.
+Supplying a value of "7" clarifies the instrument description; any
+other value or the absence of this field should cause the
+respondent to default to the active issue.
+.PP
+Additionally the following patterns may be uses as well as enum
+values
+.PP
+Dx = FX tenor expression for "days", e.g. "D5", where "x" is any
+integer > 0
+.PP
+Mx = FX tenor expression for "months", e.g. "M3", where "x" is any
+integer > 0
+.PP
+Wx = FX tenor expression for "weeks", e.g. "W13", where "x" is any
+integer > 0
+.PP
+Yx = FX tenor expression for "years", e.g. "Y1", where "x" is any
+integer > 0
+.PP
+Noted that for FX the tenors expressed using Dx, Mx, Wx, and Yx
+values do not denote business days, but calendar days.
+0
+=
+.PP
+Regular / FX Spot settlement (T+1 or T+2 depending on currency)
+1
+=
+.PP
+Cash (TOD / T+0)
+2
+=
+.PP
+Next Day (TOM / T+1)
+3
+=
+.PP
+T+2
+4
+=
+.PP
+T+3
+5
+=
+.PP
+T+4
+6
+=
+.PP
+Future
+7
+=
+.PP
+When And If Issued
+8
+=
+.PP
+Sellers Option
+9
+=
+.PP
+T+5
+B
+=
+.PP
+Broken date - for FX expressing non-standard tenor, SettlDate (64)
+must be specified
+C
+=
+.PP
+FX Spot Next settlement (Spot+1, aka next day)
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=SettlType)]
+[AllocationInstructionAlert (body_57566677.html?find=SettlType)]
+[AllocationReport (body_55566583.html?find=SettlType)]
+[Confirmation (body_55486575.html?find=SettlType)]
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=SettlType)]
+[ExecutionReport (body_5756.html?find=SettlType)]
+[MultilegOrderCancelReplace (body_54506567.html?find=SettlType)]
+[NewOrderCross (body_5350115.html?find=SettlType)]
+[NewOrderMultileg (body_54496566.html?find=SettlType)]
+[NewOrderSingle (body_495268.html?find=SettlType)]
+[OrderCancelReplaceRequest (body_495571.html?find=SettlType)]
+[Quote (body_505583.html?find=SettlType)]
+[QuoteResponse (body_54576574.html?find=SettlType)]
+[QuoteStatusReport (body_54566573.html?find=SettlType)]
+[TradeCaptureReport (body_54526569.html?find=SettlType)]
+[TradeCaptureReportAck (body_55556582.html?find=SettlType)]
+.PP
+   *   *   *   *   *
+Used in components:
+[BidCompReqGrp (body_50484852.html?find=SettlType)]
+[BidCompRspGrp (body_50484853.html?find=SettlType)]
+[InstrmtMDReqGrp (body_50485050.html?find=SettlType)]
+[ListOrdGrp (body_50485148.html?find=SettlType)]
+[MDFullGrp (body_50485149.html?find=SettlType)]
+[MDIncGrp (body_50485150.html?find=SettlType)]
+[QuotReqGrp (body_50485253.html?find=SettlType)]
+[QuotReqRjctGrp (body_50485255.html?find=SettlType)]
+[StrmAsgnReqInstrmtGrp (body_50495348.html?find=SettlType)]
+[StrmAsgnRptInstrmtGrp (body_50495349.html?find=SettlType)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

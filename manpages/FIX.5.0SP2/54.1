@@ -1,0 +1,140 @@
+.TH FIX.5.0SP2 "" "" "Tag #54"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+54 (tag54.html)
+Side (tag54.html)
+\@Side
+char
+.PP
+Side of order (see Volume : "Glossary" for value definitions)
+1
+=
+.PP
+Buy
+2
+=
+.PP
+Sell
+3
+=
+.PP
+Buy minus
+4
+=
+.PP
+Sell plus
+5
+=
+.PP
+Sell short
+6
+=
+.PP
+Sell short exempt
+7
+=
+.PP
+Undisclosed (valid for IOI and List Order messages only)
+8
+=
+.PP
+Cross (orders where counterparty is an exchange, valid for all
+messages except IOIs)
+9
+=
+.PP
+Cross short
+A
+=
+.PP
+Cross short exempt
+B
+=
+.PP
+"As Defined" (for use with multileg instruments)
+C
+=
+.PP
+"Opposite" (for use with multileg instruments)
+D
+=
+.PP
+Subscribe (e.g. CIV)
+E
+=
+.PP
+Redeem (e.g. CIV)
+F
+=
+.PP
+Lend (FINANCING - identifies direction of collateral)
+G
+=
+.PP
+Borrow (FINANCING - identifies direction of collateral)
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=Side)]
+[AllocationInstructionAlert (body_57566677.html?find=Side)]
+[AllocationReport (body_55566583.html?find=Side)]
+[CollateralAssignment (body_56526589.html?find=Side)]
+[CollateralInquiry (body_56556666.html?find=Side)]
+[CollateralReport (body_56546665.html?find=Side)]
+[CollateralRequest (body_56516588.html?find=Side)]
+[CollateralResponse (body_56536590.html?find=Side)]
+[Confirmation (body_55486575.html?find=Side)]
+[DontKnowTradeDK (body_505381.html?find=Side)]
+[ExecutionAcknowledgement (body_57576678.html?find=Side)]
+[ExecutionReport (body_5756.html?find=Side)]
+[IOI (body_5554.html?find=Side)]
+[MultilegOrderCancelReplace (body_54506567.html?find=Side)]
+[NewOrderMultileg (body_54496566.html?find=Side)]
+[NewOrderSingle (body_495268.html?find=Side)]
+[OrderCancelReplaceRequest (body_495571.html?find=Side)]
+[OrderCancelRequest (body_495470.html?find=Side)]
+[OrderMassActionReport (body_4949496690.html?find=Side)]
+[OrderMassActionRequest (body_4949506765.html?find=Side)]
+[OrderMassCancelReport (body_5349114.html?find=Side)]
+[OrderMassCancelRequest (body_5348113.html?find=Side)]
+[OrderMassStatusRequest (body_54536570.html?find=Side)]
+[OrderStatusRequest (body_495672.html?find=Side)]
+[Quote (body_505583.html?find=Side)]
+[QuoteResponse (body_54576574.html?find=Side)]
+[QuoteStatusReport (body_54566573.html?find=Side)]
+[SettlementInstructionRequest (body_56496586.html?find=Side)]
+[TradeCaptureReportRequest (body_54516568.html?find=Side)]
+.PP
+   *   *   *   *   *
+Used in components:
+[BidCompReqGrp (body_50484852.html?find=Side)]
+[BidCompRspGrp (body_50484853.html?find=Side)]
+[InstrmtStrkPxGrp (body_50485051.html?find=Side)]
+[ListOrdGrp (body_50485148.html?find=Side)]
+[QuotReqGrp (body_50485253.html?find=Side)]
+[QuotReqRjctGrp (body_50485255.html?find=Side)]
+[SettlInstGrp (body_50485355.html?find=Side)]
+[SideCrossOrdCxlGrp (body_50485356.html?find=Side)]
+[SideCrossOrdModGrp (body_50485357.html?find=Side)]
+[TrdCapRptAckSideGrp (body_50485752.html?find=Side)]
+[TrdCapRptSideGrp (body_50485449.html?find=Side)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

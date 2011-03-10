@@ -1,0 +1,88 @@
+.TH FIX.5.0 "" "" "Tag #529"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+529 (tag529.html)
+OrderRestrictions (tag529.html)
+\@Rstctions
+MultipleCharValue
+.PP
+Restrictions associated with an order. If more than one restriction
+is applicable to an order, this field can contain multiple
+instructions separated by space.
+1
+=
+.PP
+Program Trade
+2
+=
+.PP
+Index Arbitrage
+3
+=
+.PP
+Non-Index Arbitrage
+4
+=
+.PP
+Competing Market Maker
+5
+=
+.PP
+Acting as Market Maker or Specialist in the security
+6
+=
+.PP
+Acting as Market Maker of Specialist in the underlying security of
+a derivative seucirty
+7
+=
+.PP
+Foreign Entity (of foreign government or regulatory jurisdiction)
+8
+=
+.PP
+External Market Participant
+9
+=
+.PP
+Extneral Inter-connected Market Linkage
+A
+=
+.PP
+Riskless Arbitrage
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=OrderRestrictions)]
+[MultilegOrderCancelReplace (body_54506567.html?find=OrderRestrictions)]
+[NewOrderMultileg (body_54496566.html?find=OrderRestrictions)]
+[NewOrderSingle (body_495268.html?find=OrderRestrictions)]
+[OrderCancelReplaceRequest (body_495571.html?find=OrderRestrictions)]
+.PP
+   *   *   *   *   *
+Used in components:
+[CpctyConfGrp (body_50484951.html?find=OrderRestrictions)]
+[ListOrdGrp (body_50485148.html?find=OrderRestrictions)]
+[SideCrossOrdModGrp (body_50485357.html?find=OrderRestrictions)]
+[TrdCapRptAckSideGrp (body_50485752.html?find=OrderRestrictions)]
+[TrdCapRptSideGrp (body_50485449.html?find=OrderRestrictions)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

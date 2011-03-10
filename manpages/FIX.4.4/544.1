@@ -1,0 +1,59 @@
+.TH FIX.4.4 "" "" "Tag #544"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+544 (tag544.html)
+CashMargin (tag544.html)
+\@CshMgn
+char
+.PP
+Identifies whether an order is a margin order or a non-margin
+order. This is primarily used when sending orders to Japanese
+exchanges to indicate sell margin or buy to cover. The same tag
+could be assigned also by buy-side to indicate the intent to sell
+or buy margin and the sell-side to accept or reject (base on some
+validation criteria) the margin request.
+1
+=
+.PP
+Cash
+2
+=
+.PP
+MarginOpen
+3
+=
+.PP
+MarginClose
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=CashMargin)]
+[MultilegOrderCancelReplace (body_54506567.html?find=CashMargin)]
+[NewOrderMultileg (body_54496566.html?find=CashMargin)]
+[NewOrderSingle (body_495268.html?find=CashMargin)]
+[OrderCancelReplaceRequest (body_495571.html?find=CashMargin)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=CashMargin)]
+[SideCrossOrdModGrp (body_50485357.html?find=CashMargin)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

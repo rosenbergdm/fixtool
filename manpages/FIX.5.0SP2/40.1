@@ -1,0 +1,154 @@
+.TH FIX.5.0SP2 "" "" "Tag #40"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+40 (tag40.html)
+OrdType (tag40.html)
+\@OrdTyp
+char
+.PP
+Order type. *** SOME VALUES ARE NO LONGER USED - See "Deprecated
+(Phased-out) Features and Supported Approach" *** (see Volume :
+"Glossary" for value definitions)
+1
+=
+.PP
+Market
+2
+=
+.PP
+Limit
+3
+=
+.PP
+Stop / Stop Loss
+4
+=
+.PP
+Stop Limit
+5
+=
+.PP
+Market On Close (No longer used)
+6
+=
+.PP
+With Or Without
+7
+=
+.PP
+Limit Or Better
+8
+=
+.PP
+Limit With Or Without
+9
+=
+.PP
+On Basis
+A
+=
+.PP
+On Close (No longer used)
+B
+=
+.PP
+Limit On Close (No longer used)
+C
+=
+.PP
+Forex Market (No longer used)
+D
+=
+.PP
+Previously Quoted
+E
+=
+.PP
+Previously Indicated
+F
+=
+.PP
+Forex Limit (No longer used)
+G
+=
+.PP
+Forex Swap
+H
+=
+.PP
+Forex Previously Quoted (No longer used)
+I
+=
+.PP
+Funari (Limit day order with unexecuted portion handles as Market
+On Close. E.g. Japan)
+J
+=
+.PP
+Market If Touched (MIT)
+K
+=
+.PP
+Market With Left Over as Limit (market order with unexecuted
+quantity becoming limit order at last price)
+L
+=
+.PP
+Previous Fund Valuation Point (Historic pricing; for CIV)
+M
+=
+.PP
+Next Fund Valuation Point (Forward pricing; for CIV)
+P
+=
+.PP
+Pegged
+Q
+=
+.PP
+Counter-order selection
+.PP
+   *   *   *   *   *
+Used in messages:
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=OrdType)]
+[ExecutionReport (body_5756.html?find=OrdType)]
+[MultilegOrderCancelReplace (body_54506567.html?find=OrdType)]
+[NewOrderCross (body_5350115.html?find=OrdType)]
+[NewOrderMultileg (body_54496566.html?find=OrdType)]
+[NewOrderSingle (body_495268.html?find=OrdType)]
+[OrderCancelReplaceRequest (body_495571.html?find=OrdType)]
+[Quote (body_505583.html?find=OrdType)]
+[QuoteResponse (body_54576574.html?find=OrdType)]
+[QuoteStatusReport (body_54566573.html?find=OrdType)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=OrdType)]
+[MDFullGrp (body_50485149.html?find=OrdType)]
+[MDIncGrp (body_50485150.html?find=OrdType)]
+[OrdTypeRules (body_50495056.html?find=OrdType)]
+[QuotEntryAckGrp (body_50485250.html?find=OrdType)]
+[QuotEntryGrp (body_50485251.html?find=OrdType)]
+[QuotReqGrp (body_50485253.html?find=OrdType)]
+[QuotReqRjctGrp (body_50485255.html?find=OrdType)]
+[TradeReportOrderDetail (body_50495251.html?find=OrdType)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

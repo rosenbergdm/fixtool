@@ -1,0 +1,75 @@
+.TH FIX.5.0 "" "" "Tag #537"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+537 (tag537.html)
+QuoteType (tag537.html)
+\@Typ
+int
+.PP
+Identifies the type of quote.
+.PP
+An indicative quote is used to inform a counterparty of a market.
+An indicative quote does not result directly in a trade.
+.PP
+A tradeable quote is submitted to a market and will result directly
+in a trade against other orders and quotes in a market.
+.PP
+A restricted tradeable quote is submitted to a market and within a
+certain restriction (possibly based upon price or quantity) will
+automatically trade against orders. Order that do not comply with
+restrictions are sent to the quote issuer who can choose to accept
+or decline the order.
+.PP
+A counter quote is used in the negotiation model. See Volume 7 –
+Product: Fixed Income for example usage.
+0
+=
+.PP
+Indicative
+1
+=
+.PP
+Tradeable
+2
+=
+.PP
+Restricted Tradeable
+3
+=
+.PP
+Counter (tradeable)
+.PP
+   *   *   *   *   *
+Used in messages:
+[MassQuote (body_5250105.html?find=QuoteType)]
+[MassQuoteAcknowledgement (body_515398.html?find=QuoteType)]
+[Quote (body_505583.html?find=QuoteType)]
+[QuoteResponse (body_54576574.html?find=QuoteType)]
+[QuoteStatusReport (body_54566573.html?find=QuoteType)]
+.PP
+   *   *   *   *   *
+Used in components:
+[InstrmtMDReqGrp (body_50485050.html?find=QuoteType)]
+[QuotReqGrp (body_50485253.html?find=QuoteType)]
+[QuotReqRjctGrp (body_50485255.html?find=QuoteType)]
+[RFQReqGrp (body_50485349.html?find=QuoteType)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

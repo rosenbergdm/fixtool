@@ -1,0 +1,58 @@
+.TH FIX.4.4 "" "" "Tag #775"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+775 (tag775.html)
+BookingType (tag775.html)
+\@BkngTyp
+int
+.PP
+Method for booking out this order. Used when notifying a broker
+that an order to be settled by that broker is to be booked out as
+an OTC derivative (e.g. CFD or similar).
+0
+=
+.PP
+RegularBooking
+1
+=
+.PP
+CFDContractForDifference
+2
+=
+.PP
+TotalReturnSwap
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=BookingType)]
+[AllocationReport (body_55566583.html?find=BookingType)]
+[ExecutionReport (body_5756.html?find=BookingType)]
+[MultilegOrderCancelReplace (body_54506567.html?find=BookingType)]
+[NewOrderMultileg (body_54496566.html?find=BookingType)]
+[NewOrderSingle (body_495268.html?find=BookingType)]
+[OrderCancelReplaceRequest (body_495571.html?find=BookingType)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=BookingType)]
+[SideCrossOrdModGrp (body_50485357.html?find=BookingType)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

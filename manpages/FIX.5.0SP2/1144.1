@@ -1,0 +1,59 @@
+.TH FIX.5.0SP2 "" "" "Tag #1144"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+1144 (tag1144.html)
+ImpliedMarketIndicator (tag1144.html)
+\@ImpldMktInd
+int
+.PP
+Indicates that an implied market should be created for either the
+legs of a multi-leg instrument (Implied-in) or for the multi-leg
+instrument based on the existence of the legs (Implied-out).
+Determination as to whether implied markets should be created is
+generally done at the level of the multi-leg instrument. Commonly
+used in listed derivatives.
+0
+=
+.PP
+Not implied
+1
+=
+.PP
+Implied-in - The existence of a multi-leg instrument is implied by
+the legs of that instrument
+2
+=
+.PP
+Implied-out - The existence of the underlying legs are implied by
+the multi-leg instrument
+3
+=
+.PP
+Both Implied-in and Implied-out
+.PP
+   *   *   *   *   *
+Used in messages:
+.PP
+   *   *   *   *   *
+Used in components:
+[BaseTradingRules (body_50495149.html?find=ImpliedMarketIndicator)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

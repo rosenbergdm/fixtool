@@ -1,0 +1,38 @@
+.TH FIX.5.0SP2 "" "" "Tag #424"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+424 (tag424.html)
+DayOrderQty (tag424.html)
+\@DayOrdQty
+Qty
+.PP
+For GT orders, the OrderQty (38) less all quantity (adjusted for
+stock splits) that traded on previous days. DayOrderQty (424) =
+OrderQty - (CumQty (14) - DayCumQty (425))
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=DayOrderQty)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

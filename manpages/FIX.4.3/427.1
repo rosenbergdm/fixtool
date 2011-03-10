@@ -1,0 +1,54 @@
+.TH FIX.4.3 "" "" "Tag #427"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+427 (tag427.html)
+GTBookingInst (tag427.html)
+int
+.PP
+Code to identify whether to book out executions on a part-filled GT
+order on the day of execution or to accumulate.
+0
+=
+.PP
+book out all trades on day of execution
+1
+=
+.PP
+accumulate executions until order is filled or expires
+2
+=
+.PP
+accumulate until verbally notified otherwise
+.PP
+   *   *   *   *   *
+Used in messages:
+[CrossOrderCancelReplaceRequest (body_5352116.html?find=GTBookingInst)]
+[ExecutionReport (body_5756.html?find=GTBookingInst)]
+[MultilegOrderCancelReplaceRequest (body_54506567.html?find=GTBookingInst)]
+[NewOrderCross (body_5350115.html?find=GTBookingInst)]
+[NewOrderList (body_495369.html?find=GTBookingInst)]
+[NewOrderMultileg (body_54496566.html?find=GTBookingInst)]
+[NewOrderSingle (body_495268.html?find=GTBookingInst)]
+[OrderCancelReplaceRequest (body_495571.html?find=GTBookingInst)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

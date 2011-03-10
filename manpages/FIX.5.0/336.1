@@ -1,0 +1,95 @@
+.TH FIX.5.0 "" "" "Tag #336"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+336 (tag336.html)
+TradingSessionID (tag336.html)
+\@SesID
+String
+.PP
+Identifier for Trading Session
+.PP
+Can be used to represent a specific market trading session (e.g.
+"PRE-OPEN", "CROSS_2", "AFTER-HOURS", "TOSTNET", "TOSTNET2", etc).
+.PP
+To specify good for session where session spans more than one
+calendar day, use TimeInForce = Day in conjunction with
+TradingSessionID.
+.PP
+Values should be bi-laterally agreed to between counterparties.
+.PP
+Firms may register Trading Session values on the FIX website
+(presently a document maintained within "ECN and Exchanges" working
+group section).
+.PP
+   *   *   *   *   *
+Used in messages:
+[Advertisement (body_5655.html?find=TradingSessionID)]
+[AllocationInstruction (body_495774.html?find=TradingSessionID)]
+[AllocationInstructionAlert (body_57566677.html?find=TradingSessionID)]
+[AllocationReport (body_55566583.html?find=TradingSessionID)]
+[CollateralAssignment (body_56526589.html?find=TradingSessionID)]
+[CollateralInquiry (body_56556666.html?find=TradingSessionID)]
+[CollateralInquiryAck (body_57506671.html?find=TradingSessionID)]
+[CollateralReport (body_56546665.html?find=TradingSessionID)]
+[CollateralRequest (body_56516588.html?find=TradingSessionID)]
+[DerivativeSecurityListRequest (body_5357122.html?find=TradingSessionID)]
+[ExecutionReport (body_5756.html?find=TradingSessionID)]
+[OrderMassCancelReport (body_5349114.html?find=TradingSessionID)]
+[OrderMassCancelRequest (body_5348113.html?find=TradingSessionID)]
+[OrderMassStatusRequest (body_54536570.html?find=TradingSessionID)]
+[Quote (body_505583.html?find=TradingSessionID)]
+[QuoteCancel (body_515190.html?find=TradingSessionID)]
+[QuoteResponse (body_54576574.html?find=TradingSessionID)]
+[QuoteStatusReport (body_54566573.html?find=TradingSessionID)]
+[QuoteStatusRequest (body_515297.html?find=TradingSessionID)]
+[SecurityDefinition (body_5155100.html?find=TradingSessionID)]
+[SecurityDefinitionRequest (body_515499.html?find=TradingSessionID)]
+[SecurityDefinitionUpdateReport (body_57536680.html?find=TradingSessionID)]
+[SecurityListRequest (body_5355120.html?find=TradingSessionID)]
+[SecurityStatus (body_5157102.html?find=TradingSessionID)]
+[SecurityStatusRequest (body_5156101.html?find=TradingSessionID)]
+[SecurityTypeRequest (body_5353118.html?find=TradingSessionID)]
+[SecurityTypes (body_5354119.html?find=TradingSessionID)]
+[TradeCaptureReportRequest (body_54516568.html?find=TradingSessionID)]
+[TradingSessionListRequest (body_4948496673.html?find=TradingSessionID)]
+[TradingSessionStatus (body_5249104.html?find=TradingSessionID)]
+[TradingSessionStatusRequest (body_5248103.html?find=TradingSessionID)]
+.PP
+   *   *   *   *   *
+Used in components:
+[BidCompReqGrp (body_50484852.html?find=TradingSessionID)]
+[BidCompRspGrp (body_50484853.html?find=TradingSessionID)]
+[MDFullGrp (body_50485149.html?find=TradingSessionID)]
+[MDIncGrp (body_50485150.html?find=TradingSessionID)]
+[QuotEntryAckGrp (body_50485250.html?find=TradingSessionID)]
+[QuotEntryGrp (body_50485251.html?find=TradingSessionID)]
+[QuotReqGrp (body_50485253.html?find=TradingSessionID)]
+[QuotReqRjctGrp (body_50485255.html?find=TradingSessionID)]
+[RFQReqGrp (body_50485349.html?find=TradingSessionID)]
+[RelSymDerivSecGrp (body_50485348.html?find=TradingSessionID)]
+[SecListGrp (body_50485353.html?find=TradingSessionID)]
+[SecLstUpdRelSymGrp (body_50485655.html?find=TradingSessionID)]
+[TrdCapRptAckSideGrp (body_50485752.html?find=TradingSessionID)]
+[TrdCapRptSideGrp (body_50485449.html?find=TradingSessionID)]
+[TrdSessLstGrp (body_50485757.html?find=TradingSessionID)]
+[TrdgSesGrp (body_50485452.html?find=TradingSessionID)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

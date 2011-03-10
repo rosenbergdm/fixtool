@@ -1,0 +1,49 @@
+.TH FIX.5.0 "" "" "Tag #900"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+900 (tag900.html)
+TotalNetValue (tag900.html)
+\@TotNetValu
+Amt
+.PP
+TotalNetValue is determined as follows:
+.PP
+At the initial collateral assignment TotalNetValue is the sum of
+(UnderlyingStartValue * (1-haircut)).
+.PP
+In a collateral substitution TotalNetValue is the sum of
+(UnderlyingCurrentValue * (1-haircut)).
+.PP
+For listed derivatives clearing margin management, this is the
+collateral value which equals (Market value * haircut)
+.PP
+   *   *   *   *   *
+Used in messages:
+[CollateralAssignment (body_56526589.html?find=TotalNetValue)]
+[CollateralInquiry (body_56556666.html?find=TotalNetValue)]
+[CollateralReport (body_56546665.html?find=TotalNetValue)]
+[CollateralRequest (body_56516588.html?find=TotalNetValue)]
+[CollateralResponse (body_56536590.html?find=TotalNetValue)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

@@ -1,0 +1,70 @@
+.TH FIX.5.0 "" "" "Tag #582"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+582 (tag582.html)
+CustOrderCapacity (tag582.html)
+\@CustCpcty
+int
+.PP
+Capacity of customer placing the order
+.PP
+Primarily used by futures exchanges to indicate the CTICode
+(customer type indicator) as required by the US CFTC (Commodity
+Futures Trading Commission).
+1
+=
+.PP
+Member trading for their own account
+2
+=
+.PP
+Clearing Firm trading for its proprietary account
+3
+=
+.PP
+Member trading for another member
+4
+=
+.PP
+All other
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=CustOrderCapacity)]
+[AllocationInstructionAlert (body_57566677.html?find=CustOrderCapacity)]
+[AllocationReport (body_55566583.html?find=CustOrderCapacity)]
+[ExecutionReport (body_5756.html?find=CustOrderCapacity)]
+[MultilegOrderCancelReplace (body_54506567.html?find=CustOrderCapacity)]
+[NewOrderMultileg (body_54496566.html?find=CustOrderCapacity)]
+[NewOrderSingle (body_495268.html?find=CustOrderCapacity)]
+[OrderCancelReplaceRequest (body_495571.html?find=CustOrderCapacity)]
+[Quote (body_505583.html?find=CustOrderCapacity)]
+[QuoteResponse (body_54576574.html?find=CustOrderCapacity)]
+[QuoteStatusReport (body_54566573.html?find=CustOrderCapacity)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=CustOrderCapacity)]
+[SideCrossOrdModGrp (body_50485357.html?find=CustOrderCapacity)]
+[TrdCapRptAckSideGrp (body_50485752.html?find=CustOrderCapacity)]
+[TrdCapRptSideGrp (body_50485449.html?find=CustOrderCapacity)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

@@ -1,0 +1,70 @@
+.TH FIX.5.0 "" "" "Tag #126"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+126 (tag126.html)
+ExpireTime (tag126.html)
+\@ExpireTm
+UTCTimestamp
+.PP
+Time/Date of order expiration (always expressed in UTC (Universal
+Time Coordinated, also known as "GMT")
+.PP
+The meaning of expiration is specific to the context where the
+field is used.
+.PP
+For orders, this is the expiration time of a Good Til Date
+TimeInForce.
+.PP
+For Quotes - this is the expiration of the quote.
+.PP
+Expiration time is provided across the quote message dialog to
+control the length of time of the overall quoting process.
+.PP
+For collateral requests, this is the time by which collateral must
+be assigned.
+.PP
+For collateral assignments, this is the time by which a response to
+the assignment is expected.
+.PP
+   *   *   *   *   *
+Used in messages:
+[CollateralAssignment (body_56526589.html?find=ExpireTime)]
+[CollateralRequest (body_56516588.html?find=ExpireTime)]
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=ExpireTime)]
+[ExecutionReport (body_5756.html?find=ExpireTime)]
+[MultilegOrderCancelReplace (body_54506567.html?find=ExpireTime)]
+[NewOrderCross (body_5350115.html?find=ExpireTime)]
+[NewOrderMultileg (body_54496566.html?find=ExpireTime)]
+[NewOrderSingle (body_495268.html?find=ExpireTime)]
+[OrderCancelReplaceRequest (body_495571.html?find=ExpireTime)]
+[QuoteStatusReport (body_54566573.html?find=ExpireTime)]
+[SettlementInstructionRequest (body_56496586.html?find=ExpireTime)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=ExpireTime)]
+[MDFullGrp (body_50485149.html?find=ExpireTime)]
+[MDIncGrp (body_50485150.html?find=ExpireTime)]
+[QuotReqGrp (body_50485253.html?find=ExpireTime)]
+[QuotReqRjctGrp (body_50485255.html?find=ExpireTime)]
+[SettlInstGrp (body_50485355.html?find=ExpireTime)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

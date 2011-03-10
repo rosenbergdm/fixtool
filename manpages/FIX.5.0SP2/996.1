@@ -1,0 +1,118 @@
+.TH FIX.5.0SP2 "" "" "Tag #996"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+996 (tag996.html)
+UnitOfMeasure (tag996.html)
+\@UOM
+String
+.PP
+The unit of measure of the underlying commodity upon which the
+contract is based. Two groups of units of measure enumerations are
+supported.
+.PP
+Fixed Magnitude UOMs are primarily used in energy derivatives and
+specify a magnitude (such as, MM, Kilo, M, etc.) and the dimension
+(such as, watt hours, BTU\[aq]s) to produce standard fixed measures
+(such as MWh - Megawatt-hours, MMBtu - One million BTUs).
+.PP
+The second group, Variable Quantity UOMs, specifies the dimension
+as a single unit without a magnitude (or more accurately a
+magnitude of one) and uses the UnitOfMeasureQty(1147) field to
+define the quantity of units per contract. Variable Quantity UOMs
+are used for both commodities (such as lbs of lean cattle, bushels
+of corn, ounces of gold) and financial futures.
+.PP
+Examples:
+.PP
+For lean cattle futures contracts, a UnitOfMeasure of \[aq]lbs\[aq]
+with a UnitOfMeasureQty(1147) of 40,000, means each lean cattle
+futures contract represents 40,000 lbs of lean cattle.
+.PP
+For Eurodollars futures contracts, a UnitOfMeasure of USD with a
+UnitOfMeasureQty(1147) of 1,000,000, means a Eurodollar futures
+contract represents 1,000,000 USD.
+.PP
+For gold futures contracts, a UnitOfMeasure is oz_tr (Troy ounce)
+with a UnitOfMeasureQty(1147) of 1,000, means each gold futures
+contract represents 1,000 troy ounces of gold.
+—\ Fixed Magnitude UOM\ —
+Bcf
+=
+.PP
+Billion cubic feet
+MMbbl
+=
+.PP
+Million Barrels
+MMBtu
+=
+.PP
+One Million BTU
+MWh
+=
+.PP
+Megawatt hours
+—\ Variable Quantity UOM\ —
+Bbl
+=
+.PP
+Barrels
+Bu
+=
+.PP
+Bushels
+lbs
+=
+.PP
+pounds
+Gal
+=
+.PP
+Gallons
+oz_tr
+=
+.PP
+Troy Ounces
+t
+=
+.PP
+Metric Tons (aka Tonne)
+tn
+=
+.PP
+Tons (US)
+USD
+=
+.PP
+US Dollars
+Alw
+=
+.PP
+Allowances
+.PP
+   *   *   *   *   *
+Used in messages:
+.PP
+   *   *   *   *   *
+Used in components:
+[Instrument (body_49484851.html?find=UnitOfMeasure)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

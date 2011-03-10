@@ -1,0 +1,102 @@
+.TH FIX.5.0 "" "" "Tag #626"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+626 (tag626.html)
+AllocType (tag626.html)
+\@AllocType
+int
+.PP
+Describes the specific type or purpose of an Allocation message
+(i.e. "Buyside Calculated")
+.PP
+(see Volume : "Glossary" for value definitions)
+.PP
+*** SOME VALUES HAVE BEEN REPLACED - See "Replaced Features and
+Supported Approach" ***
+1
+=
+.PP
+Calculated (includes MiscFees and NetMoney)
+2
+=
+.PP
+Preliminary (without MiscFees and NetMoney)
+3
+=
+.PP
+Sellside Calculated Using Preliminary (includes MiscFees and
+NetMoney) (Replaced)
+4
+=
+.PP
+Sellside Calculated Without Preliminary (sent unsolicited by
+sellside, includes MiscFees and NetMoney) (Replaced)
+5
+=
+.PP
+Ready-To-Book - Single Order
+6
+=
+.PP
+Buyside Ready-To-Book - Combined Set of Orders (Replaced)
+7
+=
+.PP
+Warehouse Instruction
+8
+=
+.PP
+Request to Intermediary
+9
+=
+.PP
+Accept
+10
+=
+.PP
+Reject
+11
+=
+.PP
+Accept Pending
+12
+=
+.PP
+Incomplete Group
+13
+=
+.PP
+Complete Group
+14
+=
+.PP
+Reversal Pending
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=AllocType)]
+[AllocationInstructionAck (body_505280.html?find=AllocType)]
+[AllocationInstructionAlert (body_57566677.html?find=AllocType)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

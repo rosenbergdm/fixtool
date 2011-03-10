@@ -1,0 +1,48 @@
+.TH FIX.5.0SP2 "" "" "Tag #1090"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+1090 (tag1090.html)
+MaxPriceLevels (tag1090.html)
+\@MxPxLvls
+int
+.PP
+Allows an order to specify a maximum number of price levels to
+trade through. Only valid for aggressive orders and during
+continuous (autoexecution) trading sessions. Property lost when
+order is put on book. A partially filled order is assigned last
+trade price as limit price. Non-filled order behaves as ordinary
+Market or Limit.
+.PP
+   *   *   *   *   *
+Used in messages:
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=MaxPriceLevels)]
+[ExecutionReport (body_5756.html?find=MaxPriceLevels)]
+[MultilegOrderCancelReplace (body_54506567.html?find=MaxPriceLevels)]
+[NewOrderCross (body_5350115.html?find=MaxPriceLevels)]
+[NewOrderMultileg (body_54496566.html?find=MaxPriceLevels)]
+[NewOrderSingle (body_495268.html?find=MaxPriceLevels)]
+[OrderCancelReplaceRequest (body_495571.html?find=MaxPriceLevels)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=MaxPriceLevels)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

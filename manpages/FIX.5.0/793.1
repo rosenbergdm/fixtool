@@ -1,0 +1,47 @@
+.TH FIX.5.0 "" "" "Tag #793"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+793 (tag793.html)
+SecondaryAllocID (tag793.html)
+\@AllocID2
+String
+.PP
+Secondary allocation identifier. Unlike the AllocID (70), this can
+be shared across a number of allocation instruction or allocation
+report messages, thereby making it possible to pass an identifier
+for an original allocation message on multiple messages (e.g. from
+one party to a second to a third, across cancel and replace
+messages etc.).
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=SecondaryAllocID)]
+[AllocationInstructionAck (body_505280.html?find=SecondaryAllocID)]
+[AllocationInstructionAlert (body_57566677.html?find=SecondaryAllocID)]
+[AllocationReport (body_55566583.html?find=SecondaryAllocID)]
+[AllocationReportAck (body_55576584.html?find=SecondaryAllocID)]
+[Confirmation (body_55486575.html?find=SecondaryAllocID)]
+[ConfirmationRequest (body_57516672.html?find=SecondaryAllocID)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

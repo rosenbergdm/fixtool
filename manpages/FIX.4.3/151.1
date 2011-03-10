@@ -1,0 +1,40 @@
+.TH FIX.4.3 "" "" "Tag #151"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+151 (tag151.html)
+LeavesQty (tag151.html)
+Qty
+.PP
+Quantity open for further execution. If the OrdStatus is Canceled,
+DoneForTheDay, Expired, Calculated, or Rejected (in which case the
+order is no longer active) then LeavesQty could be 0, otherwise
+LeavesQty = OrderQty - CumQty.
+.PP
+(Prior to FIX 4.2 this field was of type int)
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=LeavesQty)]
+[ListStatus (body_505178.html?find=LeavesQty)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

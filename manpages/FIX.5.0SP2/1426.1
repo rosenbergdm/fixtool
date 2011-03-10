@@ -1,0 +1,56 @@
+.TH FIX.5.0SP2 "" "" "Tag #1426"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+1426 (tag1426.html)
+ApplReportType (tag1426.html)
+\@ApplRptTyp
+int
+.PP
+Type of report
+0
+=
+.PP
+Reset ApplSeqNum to new value specified in ApplNewSeqNum(1399)
+1
+=
+.PP
+Reports that the last message has been sent for the ApplIDs Refer
+to RefApplLastSeqNum(1357) for the application sequence number of
+the last message.
+2
+=
+.PP
+Heartbeat message indicating that Application identified by
+RefApplID(1355) is still alive. Refer to RefApplLastSeqNum(1357)
+for the application sequence number of the previous message.
+3
+=
+.PP
+Application message re-send completed.
+.PP
+   *   *   *   *   *
+Used in messages:
+[ApplicationMessageReport (body_4949486689.html?find=ApplReportType)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

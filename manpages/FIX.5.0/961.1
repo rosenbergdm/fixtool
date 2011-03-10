@@ -1,0 +1,44 @@
+.TH FIX.5.0 "" "" "Tag #961"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+961 (tag961.html)
+HostCrossID (tag961.html)
+\@HstCxID
+String
+.PP
+Host assigned entity ID that can be used to reference all
+components of a cross; sides + strategy + legs. Used as the primary
+key with which to refer to the Cross Order for cancellation and
+replace. The HostCrossID will also be used to link together
+components of the Cross Order. For example, each individual
+Execution Report associated with the order will carry HostCrossID
+in order to tie back to the original cross order.
+.PP
+   *   *   *   *   *
+Used in messages:
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=HostCrossID)]
+[CrossOrderCancelRequest (body_5352117.html?find=HostCrossID)]
+[ExecutionReport (body_5756.html?find=HostCrossID)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

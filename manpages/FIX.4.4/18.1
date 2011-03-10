@@ -1,0 +1,208 @@
+.TH FIX.4.4 "" "" "Tag #18"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+18 (tag18.html)
+ExecInst (tag18.html)
+\@ExecInst
+MultipleValueString
+.PP
+Instructions for order handling on exchange trading floor. If more
+than one instruction is applicable to an order, this field can
+contain multiple instructions separated by space.
+0
+=
+.PP
+StayOffer
+1
+=
+.PP
+NotHeld
+2
+=
+.PP
+Work
+3
+=
+.PP
+GoAlong
+4
+=
+.PP
+OverDay
+5
+=
+.PP
+Held
+6
+=
+.PP
+PartNotInit
+7
+=
+.PP
+StrictScale
+8
+=
+.PP
+TryToScale
+9
+=
+.PP
+StayBid
+A
+=
+.PP
+NoCross
+B
+=
+.PP
+OkCross
+C
+=
+.PP
+CallFirst
+D
+=
+.PP
+PercVol
+E
+=
+.PP
+DNI
+F
+=
+.PP
+DNR
+G
+=
+.PP
+AON
+H
+=
+.PP
+RestateOnSysFail
+I
+=
+.PP
+InstitOnly
+J
+=
+.PP
+RestateOnTradingHalt
+K
+=
+.PP
+CancelOnTradingHalt
+L
+=
+.PP
+LastPeg
+M
+=
+.PP
+MidPrcPeg
+N
+=
+.PP
+NonNego
+O
+=
+.PP
+OpenPeg
+P
+=
+.PP
+MarkPeg
+Q
+=
+.PP
+CancelOnSysFail
+R
+=
+.PP
+PrimPeg
+S
+=
+.PP
+Suspend
+U
+=
+.PP
+CustDispInst
+V
+=
+.PP
+Netting
+W
+=
+.PP
+PegVWAP
+X
+=
+.PP
+TradeAlong
+Y
+=
+.PP
+TryToStop
+Z
+=
+.PP
+CxlifNotBest
+a
+=
+.PP
+TrailStopPeg
+b
+=
+.PP
+StrictLimit
+c
+=
+.PP
+IgnorePriceChk
+d
+=
+.PP
+PegToLimit
+e
+=
+.PP
+WorkToStrategy
+.PP
+   *   *   *   *   *
+Used in messages:
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=ExecInst)]
+[ExecutionReport (body_5756.html?find=ExecInst)]
+[MultilegOrderCancelReplace (body_54506567.html?find=ExecInst)]
+[NewOrderCross (body_5350115.html?find=ExecInst)]
+[NewOrderMultileg (body_54496566.html?find=ExecInst)]
+[NewOrderSingle (body_495268.html?find=ExecInst)]
+[OrderCancelReplaceRequest (body_495571.html?find=ExecInst)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=ExecInst)]
+[MDFullGrp (body_50485149.html?find=ExecInst)]
+[MDIncGrp (body_50485150.html?find=ExecInst)]
+[TrdCapRptSideGrp (body_50485449.html?find=ExecInst)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

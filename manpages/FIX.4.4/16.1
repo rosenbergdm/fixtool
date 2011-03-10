@@ -1,0 +1,38 @@
+.TH FIX.4.4 "" "" "Tag #16"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+16 (tag16.html)
+EndSeqNo (tag16.html)
+SeqNum
+.PP
+Message sequence number of last message in range to be resent. If
+request is for a single message BeginSeqNo (7) = EndSeqNo. If
+request is for all messages subsequent to a particular message,
+EndSeqNo = "0" (representing infinity).
+.PP
+   *   *   *   *   *
+Used in messages:
+[ResendRequest (body_5150.html?find=EndSeqNo)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

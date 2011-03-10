@@ -1,0 +1,70 @@
+.TH FIX.5.0SP2 "" "" "Tag #87"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+87 (tag87.html)
+AllocStatus (tag87.html)
+\@Stat
+int
+.PP
+Identifies status of allocation.
+0
+=
+.PP
+accepted (successfully processed)
+1
+=
+.PP
+block level reject
+2
+=
+.PP
+account level reject
+3
+=
+.PP
+received (received, not yet processed)
+4
+=
+.PP
+incomplete
+5
+=
+.PP
+rejected by intermediary
+6
+=
+.PP
+allocation pending
+7
+=
+.PP
+reversed
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstructionAck (body_505280.html?find=AllocStatus)]
+[AllocationReport (body_55566583.html?find=AllocStatus)]
+[AllocationReportAck (body_55576584.html?find=AllocStatus)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

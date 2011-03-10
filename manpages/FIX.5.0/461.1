@@ -1,0 +1,49 @@
+.TH FIX.5.0 "" "" "Tag #461"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+461 (tag461.html)
+CFICode (tag461.html)
+\@CFI
+String
+.PP
+Indicates the type of security using ISO 10962 standard,
+Classification of Financial Instruments (CFI code) values. ISO
+10962 is maintained by ANNA (Association of National Numbering
+Agencies) acting as Registration Authority. See "Appendix 6-B FIX
+Fields Based Upon Other Standards". See also the Product (460) and
+SecurityType (167) fields. It is recommended that CFICode be used
+instead of SecurityType (167) for non-Fixed Income instruments.
+.PP
+A subset of possible values applicable to FIX usage are identified
+in "Appendix 6-D CFICode Usage - ISO 10962 Classification of
+Financial Instruments (CFI code)"
+.PP
+   *   *   *   *   *
+Used in messages:
+[SettlementInstructionRequest (body_56496586.html?find=CFICode)]
+.PP
+   *   *   *   *   *
+Used in components:
+[Instrument (body_49484851.html?find=CFICode)]
+[SecTypesGrp (body_50485354.html?find=CFICode)]
+[SettlInstGrp (body_50485355.html?find=CFICode)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

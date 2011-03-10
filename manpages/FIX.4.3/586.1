@@ -1,0 +1,46 @@
+.TH FIX.4.3 "" "" "Tag #586"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+586 (tag586.html)
+OrigOrdModTime (tag586.html)
+UTCTimestamp
+.PP
+The most recent (or current) modification TransactTime (tag 60)
+reported on an Execution Report for the order.
+.PP
+The OrigOrdModTime is provided as an optional field on Order Cancel
+Request and Order Cancel Replace Requests to identify that the
+state of the order has not changed since the request was issued.
+.PP
+This is provided to support markets similar to Eurex and A/C/E.
+.PP
+   *   *   *   *   *
+Used in messages:
+[CrossOrderCancelReplaceRequest (body_5352116.html?find=OrigOrdModTime)]
+[CrossOrderCancelRequest (body_5351117.html?find=OrigOrdModTime)]
+[MultilegOrderCancelReplaceRequest (body_54506567.html?find=OrigOrdModTime)]
+[OrderCancelReject (body_494857.html?find=OrigOrdModTime)]
+[OrderCancelReplaceRequest (body_495571.html?find=OrigOrdModTime)]
+[OrderCancelRequest (body_495470.html?find=OrigOrdModTime)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

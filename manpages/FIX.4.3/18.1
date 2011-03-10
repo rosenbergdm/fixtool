@@ -1,0 +1,221 @@
+.TH FIX.4.3 "" "" "Tag #18"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+18 (tag18.html)
+ExecInst (tag18.html)
+MultipleValueString
+.PP
+E = Do not increase - DNI
+.PP
+F = Do not reduce - DNR
+.PP
+G = All or none - AON
+.PP
+H = Reinstate on System Failure (mutually exclusive with Q)
+.PP
+I = Institutions only
+.PP
+J = Reinstate on Trading Halt (mutually exclusive with K)
+.PP
+K = Cancel on Trading Halt (mutually exclusive with L)
+.PP
+L = Last peg (last sale)
+.PP
+M = Mid-price peg (midprice of inside quote)
+.PP
+N = Non-negotiable
+.PP
+O = Opening peg
+.PP
+P = Market peg
+.PP
+Q = Cancel on System Failure (mutually exclusive with H)
+.PP
+R = Primary peg (primary market - buy at bid/sell at offer)
+.PP
+S = Suspend
+.PP
+T = Fixed Peg to Local best bid or offer at time of order
+.PP
+U = Customer Display Instruction (Rule11Ac1-1/4)
+.PP
+V = Netting (for Forex)
+.PP
+W = Peg to VWAP
+.PP
+X = Trade Along
+.PP
+Y = Try to Stop
+.PP
+(see Volume 1: "Glossary" for value definitions)
+0
+=
+.PP
+StayOffer
+1
+=
+.PP
+NotHeld
+2
+=
+.PP
+Work
+3
+=
+.PP
+GoAlong
+4
+=
+.PP
+OverDay
+5
+=
+.PP
+Held
+6
+=
+.PP
+PartNotInit
+7
+=
+.PP
+StrictScale
+8
+=
+.PP
+TryToScale
+9
+=
+.PP
+StayBid
+A
+=
+.PP
+NoCross
+B
+=
+.PP
+OkCross
+C
+=
+.PP
+CallFirst
+D
+=
+.PP
+PercVol
+E
+=
+.PP
+DNI
+F
+=
+.PP
+DNR
+G
+=
+.PP
+AON
+H
+=
+.PP
+RestateOnSysFail
+I
+=
+.PP
+InstitOnly
+J
+=
+.PP
+RestateOnTradingHalt
+K
+=
+.PP
+CancelOnTradingHalt
+L
+=
+.PP
+LastPeg
+M
+=
+.PP
+MidPrcPeg
+N
+=
+.PP
+NonNego
+O
+=
+.PP
+OpenPeg
+P
+=
+.PP
+MarkPeg
+Q
+=
+.PP
+CancelOnSysFail
+R
+=
+.PP
+PrimPeg
+S
+=
+.PP
+Suspend
+U
+=
+.PP
+CustDispInst
+V
+=
+.PP
+Netting
+W
+=
+.PP
+PegVWAP
+X
+=
+.PP
+TradeAlong
+Y
+=
+.PP
+TryToStop
+.PP
+   *   *   *   *   *
+Used in messages:
+[CrossOrderCancelReplaceRequest (body_5352116.html?find=ExecInst)]
+[ExecutionReport (body_5756.html?find=ExecInst)]
+[MarketDataIncrementalRefresh (body_514988.html?find=ExecInst)]
+[MarketDataSnapshotFullRefresh (body_514887.html?find=ExecInst)]
+[MultilegOrderCancelReplaceRequest (body_54506567.html?find=ExecInst)]
+[NewOrderCross (body_5350115.html?find=ExecInst)]
+[NewOrderList (body_495369.html?find=ExecInst)]
+[NewOrderMultileg (body_54496566.html?find=ExecInst)]
+[NewOrderSingle (body_495268.html?find=ExecInst)]
+[OrderCancelReplaceRequest (body_495571.html?find=ExecInst)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

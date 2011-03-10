@@ -1,0 +1,65 @@
+.TH FIX.5.0SP2 "" "" "Tag #13"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+13 (tag13.html)
+CommType (tag13.html)
+\@CommTyp
+char
+.PP
+Commission type
+1
+=
+.PP
+Per Unit (implying shares, par, currency, etc.)
+2
+=
+.PP
+Percent
+3
+=
+.PP
+Absolute (total monetary amount)
+4
+=
+.PP
+Percentage waived - cash discount (for CIV buy orders)
+5
+=
+.PP
+Percentage waived -= enhanced units (for CIV buy orders)
+6
+=
+.PP
+Points per bond or contract (supply ContractMultiplier (231) in the
+<Instrument> component block if the object security is denominated
+in a size other than the industry default - 1000 par for bonds)
+.PP
+   *   *   *   *   *
+Used in messages:
+[Quote (body_505583.html?find=CommType)]
+[QuoteResponse (body_54576574.html?find=CommType)]
+[QuoteStatusReport (body_54566573.html?find=CommType)]
+.PP
+   *   *   *   *   *
+Used in components:
+[CommissionData (body_49484848.html?find=CommType)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

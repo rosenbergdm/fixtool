@@ -1,0 +1,49 @@
+.TH FIX.5.0SP2 "" "" "Tag #6"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+6 (tag6.html)
+AvgPx (tag6.html)
+\@AvgPx
+Price
+.PP
+Calculated average price of all fills on this order.
+.PP
+For Fixed Income trades AvgPx is always expressed as
+percent-of-par, regardless of the PriceType (423) of LastPx (31).
+I.e., AvgPx will contain an average of percent-of-par values (see
+LastParPx (669)) for issues traded in Yield, Spread or Discount.
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=AvgPx)]
+[AllocationInstructionAlert (body_57566677.html?find=AvgPx)]
+[AllocationReport (body_55566583.html?find=AvgPx)]
+[Confirmation (body_55486575.html?find=AvgPx)]
+[ExecutionAcknowledgement (body_57576678.html?find=AvgPx)]
+[ExecutionReport (body_5756.html?find=AvgPx)]
+[TradeCaptureReport (body_54526569.html?find=AvgPx)]
+[TradeCaptureReportAck (body_55556582.html?find=AvgPx)]
+.PP
+   *   *   *   *   *
+Used in components:
+[OrdListStatGrp (body_50485155.html?find=AvgPx)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

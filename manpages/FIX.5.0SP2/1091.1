@@ -1,0 +1,49 @@
+.TH FIX.5.0SP2 "" "" "Tag #1091"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+1091 (tag1091.html)
+PreTradeAnonymity (tag1091.html)
+\@PrTrdAnon
+Boolean
+.PP
+Allows trader to explicitly request anonymity or disclosure in
+pre-trade market data feeds. Anonymity is relevant in markets where
+counterparties are regularly disclosed in order depth feeds.
+Disclosure is relevant when counterparties are not normally
+visible.
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=PreTradeAnonymity)]
+[MultilegOrderCancelReplace (body_54506567.html?find=PreTradeAnonymity)]
+[NewOrderMultileg (body_54496566.html?find=PreTradeAnonymity)]
+[NewOrderSingle (body_495268.html?find=PreTradeAnonymity)]
+[OrderCancelReplaceRequest (body_495571.html?find=PreTradeAnonymity)]
+[QuoteRequest (body_505482.html?find=PreTradeAnonymity)]
+[QuoteRequestReject (body_54546571.html?find=PreTradeAnonymity)]
+[QuoteResponse (body_54576574.html?find=PreTradeAnonymity)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=PreTradeAnonymity)]
+[SideCrossOrdModGrp (body_50485357.html?find=PreTradeAnonymity)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

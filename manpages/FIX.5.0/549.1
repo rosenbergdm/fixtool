@@ -1,0 +1,70 @@
+.TH FIX.5.0 "" "" "Tag #549"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+549 (tag549.html)
+CrossType (tag549.html)
+\@CrssTyp
+int
+.PP
+Type of cross being submitted to a market
+1
+=
+.PP
+Cross AON - cross tade which is executed complete or not. Both
+sides are treated in the same manner. This is equivalent to an "All
+or None".
+2
+=
+.PP
+Cross IOC - cross trade which is executed partially and the rest is
+cancelled. One side is fully executed, the other side is partially
+executed with the remainder being cancelled. This is equivalent to
+an IOC on the other side. Note: CrossPrioritization (550) field may
+be used to indicate which side should fully execute in this
+scenario.
+3
+=
+.PP
+Cross One Side - cross trade which is partially executed with the
+unfilled portions remaining active.. One side of the corss is fully
+executed (as denoted by the CrossPrioritization (550) field), but
+the unfilled portion remains active.
+4
+=
+.PP
+Cross Same Price - cross trade is executed with existing orders
+with the same price. In this case other orders exist with the same
+price, the quantity of the Cross is executed against the existing
+orders and quotes, the remainder of the corss is executed against
+the other side of the cross. The two sides potentially have
+different quantities.
+.PP
+   *   *   *   *   *
+Used in messages:
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=CrossType)]
+[CrossOrderCancelRequest (body_5352117.html?find=CrossType)]
+[ExecutionReport (body_5756.html?find=CrossType)]
+[NewOrderCross (body_5350115.html?find=CrossType)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

@@ -1,0 +1,57 @@
+.TH FIX.5.0SP2 "" "" "Tag #442"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+442 (tag442.html)
+MultiLegReportingType (tag442.html)
+\@MLegRptTyp
+char
+.PP
+Used to indicate what an Execution Report represents (e.g. used
+with multi-leg securities, such as option strategies, spreads,
+etc.).
+1
+=
+.PP
+Single security (default if not specified)
+2
+=
+.PP
+Individual leg of a multi-leg security
+3
+=
+.PP
+Multi-leg security
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=MultiLegReportingType)]
+[AllocationInstructionAlert (body_57566677.html?find=MultiLegReportingType)]
+[AllocationReport (body_55566583.html?find=MultiLegReportingType)]
+[ExecutionReport (body_5756.html?find=MultiLegReportingType)]
+[TradeCaptureReport (body_54526569.html?find=MultiLegReportingType)]
+[TradeCaptureReportAck (body_55556582.html?find=MultiLegReportingType)]
+[TradeCaptureReportRequest (body_54516568.html?find=MultiLegReportingType)]
+[TradeCaptureReportRequestAck (body_55546581.html?find=MultiLegReportingType)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

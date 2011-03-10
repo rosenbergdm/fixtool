@@ -1,0 +1,50 @@
+.TH FIX.5.0 "" "" "Tag #636"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+636 (tag636.html)
+WorkingIndicator (tag636.html)
+\@WorkingInd
+Boolean
+.PP
+Indicates if the order is currently being worked. Applicable only
+for OrdStatus = "New". For open outcry markets this indicates that
+the order is being worked in the crowd. For electronic markets it
+indicates that the order has transitioned from a contingent order
+to a market order.
+N
+=
+.PP
+Order has been accepted but not yet in a working state
+Y
+=
+.PP
+Order is currently being worked
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=WorkingIndicator)]
+[OrderCancelReject (body_494857.html?find=WorkingIndicator)]
+.PP
+   *   *   *   *   *
+Used in components:
+[OrdListStatGrp (body_50485155.html?find=WorkingIndicator)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

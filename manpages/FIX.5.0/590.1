@@ -1,0 +1,55 @@
+.TH FIX.5.0 "" "" "Tag #590"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+590 (tag590.html)
+BookingUnit (tag590.html)
+\@BkngUnit
+char
+.PP
+Indicates what constitutes a bookable unit.
+0
+=
+.PP
+Each partial execution is a bookable unit
+1
+=
+.PP
+Aggregate partial executions on this order, and book one trade per
+order
+2
+=
+.PP
+Aggregate executions for this symbol, side, and settlement date
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=BookingUnit)]
+[MultilegOrderCancelReplace (body_54506567.html?find=BookingUnit)]
+[NewOrderMultileg (body_54496566.html?find=BookingUnit)]
+[NewOrderSingle (body_495268.html?find=BookingUnit)]
+[OrderCancelReplaceRequest (body_495571.html?find=BookingUnit)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=BookingUnit)]
+[SideCrossOrdModGrp (body_50485357.html?find=BookingUnit)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

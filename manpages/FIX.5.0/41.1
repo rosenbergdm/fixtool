@@ -1,0 +1,44 @@
+.TH FIX.5.0 "" "" "Tag #41"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+41 (tag41.html)
+OrigClOrdID (tag41.html)
+\@OrigClOrdID
+String
+.PP
+ClOrdID (11) of the previous order (NOT the initial order of the
+day) as assigned by the institution, used to identify the previous
+order in cancel and cancel/replace requests.
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=OrigClOrdID)]
+[MultilegOrderCancelReplace (body_54506567.html?find=OrigClOrdID)]
+[OrderCancelReject (body_494857.html?find=OrigClOrdID)]
+[OrderCancelReplaceRequest (body_495571.html?find=OrigClOrdID)]
+[OrderCancelRequest (body_495470.html?find=OrigClOrdID)]
+.PP
+   *   *   *   *   *
+Used in components:
+[AffectedOrdGrp (body_50484849.html?find=OrigClOrdID)]
+[SideCrossOrdCxlGrp (body_50485356.html?find=OrigClOrdID)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

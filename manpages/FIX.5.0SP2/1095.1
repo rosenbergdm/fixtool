@@ -1,0 +1,39 @@
+.TH FIX.5.0SP2 "" "" "Tag #1095"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+1095 (tag1095.html)
+PeggedRefPrice (tag1095.html)
+\@PggdRefPx
+Price
+.PP
+The value of the reference price that the order is pegged to.
+PeggedRefPrice + PegOffsetValue (211) = PeggedPrice (839) unless
+the limit price (44, Price) is breached. The values may not be
+exact due to rounding.
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=PeggedRefPrice)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

@@ -1,0 +1,74 @@
+.TH FIX.5.0 "" "" "Tag #11"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+11 (tag11.html)
+ClOrdID (tag11.html)
+\@ClOrdID
+String
+.PP
+Unique identifier for Order as assigned by the buy-side
+(institution, broker, intermediary etc.) (identified by
+SenderCompID (49) or OnBehalfOfCompID (5) as appropriate).
+Uniqueness must be guaranteed within a single trading day. Firms,
+particularly those which electronically submit multi-day orders,
+trade globally or throughout market close periods, should ensure
+uniqueness across days, for example by embedding a date within the
+ClOrdID field.
+.PP
+   *   *   *   *   *
+Used in messages:
+[CollateralAssignment (body_56526589.html?find=ClOrdID)]
+[CollateralInquiry (body_56556666.html?find=ClOrdID)]
+[CollateralInquiryAck (body_57506671.html?find=ClOrdID)]
+[CollateralReport (body_56546665.html?find=ClOrdID)]
+[CollateralRequest (body_56516588.html?find=ClOrdID)]
+[CollateralResponse (body_56536590.html?find=ClOrdID)]
+[Email (body_495167.html?find=ClOrdID)]
+[ExecutionAcknowledgement (body_57576678.html?find=ClOrdID)]
+[ExecutionReport (body_5756.html?find=ClOrdID)]
+[MultilegOrderCancelReplace (body_54506567.html?find=ClOrdID)]
+[NewOrderMultileg (body_54496566.html?find=ClOrdID)]
+[NewOrderSingle (body_495268.html?find=ClOrdID)]
+[OrderCancelReject (body_494857.html?find=ClOrdID)]
+[OrderCancelReplaceRequest (body_495571.html?find=ClOrdID)]
+[OrderCancelRequest (body_495470.html?find=ClOrdID)]
+[OrderMassCancelReport (body_5349114.html?find=ClOrdID)]
+[OrderMassCancelRequest (body_5348113.html?find=ClOrdID)]
+[OrderStatusRequest (body_495672.html?find=ClOrdID)]
+[QuoteRequest (body_505482.html?find=ClOrdID)]
+[QuoteResponse (body_54576574.html?find=ClOrdID)]
+[RegistrationInstructions (body_5256111.html?find=ClOrdID)]
+[RegistrationInstructionsResponse (body_5257112.html?find=ClOrdID)]
+[SettlementInstructions (body_505684.html?find=ClOrdID)]
+[TradeCaptureReportRequest (body_54516568.html?find=ClOrdID)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=ClOrdID)]
+[OrdAllocGrp (body_50485154.html?find=ClOrdID)]
+[OrdListStatGrp (body_50485155.html?find=ClOrdID)]
+[SideCrossOrdCxlGrp (body_50485356.html?find=ClOrdID)]
+[SideCrossOrdModGrp (body_50485357.html?find=ClOrdID)]
+[TrdCapRptAckSideGrp (body_50485752.html?find=ClOrdID)]
+[TrdCapRptSideGrp (body_50485449.html?find=ClOrdID)]
+[UndInstrmtStrkPxGrp (body_50485455.html?find=ClOrdID)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

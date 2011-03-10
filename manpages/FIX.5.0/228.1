@@ -1,0 +1,49 @@
+.TH FIX.5.0 "" "" "Tag #228"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+228 (tag228.html)
+Factor (tag228.html)
+\@Fctr
+float
+.PP
+For Fixed Income: Amorization Factor for deriving Current face from
+Original face for ABS or MBS securities, note the fraction may be
+greater than, equal to or less than \&.
+In TIPS securities this is the Inflation index.
+.PP
+Qty * Factor * Price = Gross Trade Amount
+.PP
+For Derivatives: Contract Value Factor by which price must be
+adjusted to determine the true nominal value of one futures/options
+contract.
+.PP
+(Qty * Price) * Factor = Nominal Value
+.PP
+(Note tag # was reserved in FIX 4.1, added in FIX 4.3)
+.PP
+   *   *   *   *   *
+Used in messages:
+.PP
+   *   *   *   *   *
+Used in components:
+[Instrument (body_49484851.html?find=Factor)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

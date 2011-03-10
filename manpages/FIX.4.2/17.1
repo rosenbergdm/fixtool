@@ -1,0 +1,38 @@
+.TH FIX.4.2 "" "" "Tag #17"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+17 (tag17.html)
+ExecID (tag17.html)
+String
+.PP
+Unique identifier of execution message as assigned by broker (will
+be 0 (zero) for ExecTransType=3 (Status)).
+.PP
+Uniqueness must be guaranteed within a single trading day or the
+life of a multi-day order. Firms which accept multi-day orders
+should consider embedding a date within the ExecID field to assure
+uniqueness across days.
+.PP
+(Prior to FIX 4.1 this field was of type int)
+.PP
+   *   *   *   *   *
+Used in messages:
+[Allocation (body_495774.html?find=ExecID)]
+[Don’t Know Trade (DK) (body_505381.html?find=ExecID)]
+[Execution Report (body_5756.html?find=ExecID)]
+.PP
+   *   *   *   *   *
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

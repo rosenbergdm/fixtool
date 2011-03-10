@@ -1,0 +1,38 @@
+.TH FIX.4.1 "" "" "Tag #37"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+37 (tag37.html)
+OrderID (tag37.html)
+char
+.PP
+Unique identifier for Order as assigned by broker. Uniqueness must
+be guaranteed within a single trading day. Firms which accept
+multi-day orders should consider embedding a date within the
+OrderID field to assure uniqueness across days.
+.PP
+   *   *   *   *   *
+Used in messages:
+[Allocation (body_495774.html?find=OrderID)]
+[Don’t Know Trade (DK) (body_505381.html?find=OrderID)]
+[Email (body_495167.html?find=OrderID)]
+[Execution Report (body_5756.html?find=OrderID)]
+[Order Cancel Reject (body_494857.html?find=OrderID)]
+[Order Cancel Request (body_495470.html?find=OrderID)]
+[Order Cancel/Replace Request (body_495571.html?find=OrderID)]
+[Order Status Request (body_495672.html?find=OrderID)]
+.PP
+   *   *   *   *   *
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

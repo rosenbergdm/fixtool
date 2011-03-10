@@ -1,0 +1,367 @@
+.TH FIX.5.0SP2 "" "" "Tag #688"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+688 (tag688.html)
+LegStipulationType (tag688.html)
+\@StipTyp
+String
+.PP
+For Fixed Income, type of Stipulation for this leg.
+.PP
+See StipulationType (233) for description and
+AMT
+=
+.PP
+Alternative Minimum Tax (Y/N)
+AUTOREINV
+=
+.PP
+Auto Reinvestment at <rate> or better
+BANKQUAL
+=
+.PP
+Bank qualified (Y/N)
+BGNCON
+=
+.PP
+Bargain conditions (see StipulationValue (234) for values)
+COUPON
+=
+.PP
+Coupon range
+CURRENCY
+=
+.PP
+ISO Currency Code
+CUSTOMDATE
+=
+.PP
+Custom start/end date
+GEOG
+=
+.PP
+Geographics and % range (ex. 234=CA 0-80 [minimum of 80% California
+assets])
+HAIRCUT
+=
+.PP
+Valuation Discount
+INSURED
+=
+.PP
+Insured (Y/N)
+ISSUE
+=
+.PP
+Year Or Year/Month of Issue (ex. 234=2002/09)
+ISSUER
+=
+.PP
+Issuer\[aq]s ticker
+ISSUESIZE
+=
+.PP
+issue size range
+LOOKBACK
+=
+.PP
+Lookback Days
+LOT
+=
+.PP
+Explicit lot identifier
+LOTVAR
+=
+.PP
+Lot Variance (value in percent maximum over- or under-allocation
+allowed)
+MAT
+=
+.PP
+Maturity Year And Month
+MATURITY
+=
+.PP
+Maturity range
+MAXSUBS
+=
+.PP
+Maximum substitutions (Repo)
+MINDNOM
+=
+.PP
+Minimum denomination
+MININCR
+=
+.PP
+Minimum increment
+MINQTY
+=
+.PP
+Minimum quantity
+PAYFREQ
+=
+.PP
+Payment frequency, calendar
+PIECES
+=
+.PP
+Number Of Pieces
+PMAX
+=
+.PP
+Pools Maximum
+PPL
+=
+.PP
+Pools per Lot
+PPM
+=
+.PP
+Pools per Million
+PPT
+=
+.PP
+Pools per Trade
+PRICE
+=
+.PP
+Price Range
+PRICEFREQ
+=
+.PP
+Pricing frequency
+PROD
+=
+.PP
+Production Year
+PROTECT
+=
+.PP
+Call protection
+PURPOSE
+=
+.PP
+Purpose
+PXSOURCE
+=
+.PP
+Benchmark price source
+RATING
+=
+.PP
+Rating source and range
+REDEMPTION
+=
+.PP
+Type Of Redemption - values are: NonCallable, Prefunded,
+EscrowedToMaturity, Putable, Convertible
+RESTRICTED
+=
+.PP
+Restricted (Y/N)
+SECTOR
+=
+.PP
+Market Sector
+SECTYPE
+=
+.PP
+Security Type included or excluded
+STRUCT
+=
+.PP
+Structure
+SUBSFREQ
+=
+.PP
+Substitutions frequency (Repo)
+SUBSLEFT
+=
+.PP
+Substitutions left (Repo)
+TEXT
+=
+.PP
+Freeform Text
+TRDVAR
+=
+.PP
+Trade Variance (value in percent maximum over- or under-allocation
+allowed)
+WAC
+=
+.PP
+Weighted Average Coupon - value in percent (exact or range) plus
+"Gross" or "Net" of servicing spread (the default) (ex. 234=6.5-Net
+[minimum of 6.5% net of servicing fee])
+WAL
+=
+.PP
+Weighted Average Life Coupon - value in percent (exact or range)
+WALA
+=
+.PP
+Weighted Average Loan Age - value in months (exact or range)
+WAM
+=
+.PP
+Weighted Average Maturity - value in months (exact or range)
+WHOLE
+=
+.PP
+Whole Pool (Y/N)
+YIELD
+=
+.PP
+Yield Range
+—\ Other\ —
+AVFICO
+=
+.PP
+Average FICO Score
+AVSIZE
+=
+.PP
+Average Loan Size
+MAXBAL
+=
+.PP
+Maximum Loan Balance
+POOL
+=
+.PP
+Pool Identifier
+ROLLTYPE
+=
+.PP
+Type of Roll trade
+REFTRADE
+=
+.PP
+reference to rolling or closing trade
+REFPRIN
+=
+.PP
+principal of rolling or closing trade
+REFINT
+=
+.PP
+interest of rolling or closing trade
+AVAILQTY
+=
+.PP
+Available offer quantity to be shown to the street
+BROKERCREDIT
+=
+.PP
+Broker\[aq]s sales credit
+INTERNALPX
+=
+.PP
+Offer price to be shown to internal brokers
+INTERNALQTY
+=
+.PP
+Offer quantity to be shown to internal brokers
+LEAVEQTY
+=
+.PP
+The minimum residual offer quantity
+MAXORDQTY
+=
+.PP
+Maximum order size
+ORDRINCR
+=
+.PP
+Order quantity increment
+PRIMARY
+=
+.PP
+Primary or Secondary market indicator
+SALESCREDITOVR
+=
+.PP
+Broker sales credit override
+TRADERCREDIT
+=
+.PP
+Trader\[aq]s credit
+DISCOUNT
+=
+.PP
+Discount Rate (when price is denominated in percent of par)
+YTM
+=
+.PP
+Yield to Maturity (when YieldType(235) and Yield(236) show a
+different yield)
+—\ Prepayment Speeds\ —
+ABS
+=
+.PP
+Absolute Prepayment Speed
+CPP
+=
+.PP
+Constant Prepayment Penalty
+CPR
+=
+.PP
+Constant Prepayment Rate
+CPY
+=
+.PP
+Constant Prepayment Yield
+HEP
+=
+.PP
+final CPR of Home Equity Prepayment Curve
+MHP
+=
+.PP
+Percent of Manufactured Housing Prepayment Curve
+MPR
+=
+.PP
+Monthly Prepayment Rate
+PPC
+=
+.PP
+Percent of Prospectus Prepayment Curve
+PSA
+=
+.PP
+Percent of BMA Prepayment Curve
+SMM
+=
+.PP
+Single Monthly Mortality
+.PP
+   *   *   *   *   *
+Used in messages:
+.PP
+   *   *   *   *   *
+Used in components:
+[LegStipulations (body_49484855.html?find=LegStipulationType)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

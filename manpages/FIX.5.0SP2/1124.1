@@ -1,0 +1,63 @@
+.TH FIX.5.0SP2 "" "" "Tag #1124"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+1124 (tag1124.html)
+OrigTradeHandlingInstr (tag1124.html)
+\@OrigTrdHandlInst
+char
+.PP
+Optionally used with TradeHandlingInstr = 0 to relay the trade
+handling instruction used when reporting the trade to the
+marketplace. Same values as TradeHandlingInstr (1123)
+0
+=
+.PP
+Trade Confirmation
+1
+=
+.PP
+Two-Party Report
+2
+=
+.PP
+One-Party Report for Matching
+3
+=
+.PP
+One-Party Report for Pass Through
+4
+=
+.PP
+Automated Floor Order Routing
+5
+=
+.PP
+Two Party Report for Claim
+.PP
+   *   *   *   *   *
+Used in messages:
+[TradeCaptureReport (body_54526569.html?find=OrigTradeHandlingInstr)]
+[TradeCaptureReportAck (body_55556582.html?find=OrigTradeHandlingInstr)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

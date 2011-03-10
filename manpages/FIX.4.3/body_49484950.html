@@ -1,0 +1,47 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Component Parties</title><LINK REL="STYLESHEET" TYPE="text/css" HREF="../../fixstyle.css"><script type="text/javascript">					
+				function expand(elem) {
+					var tb;
+					tb = document.getElementById(elem);	
+					if (tb!=null) {
+						if (tb.style.display == "")	{ 
+							 tb.style.display = "none"; 
+						} else {
+							 tb.style.display = ""; 
+						 }
+					}
+					tb = document.getElementById(elem+"_inl");	
+					if (tb.style.display == "inline")	{ 
+						tb.style.display = "none"; 
+					} else {
+						 tb.style.display = "inline"; 
+					 }					 
+				}		
+			
+				function getparam(name) {
+				  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+				  var regexS = "[\\?&]"+name+"=([^&#]*)";
+				  var regex = new RegExp( regexS );
+				  var results = regex.exec(window.location.href);
+				  if( results == null )
+					return "";
+				  else
+					return results[1];
+				}
+				function find_string() {				
+					var strFound;
+					var str = getparam('find');
+					if (str=='') return;
+					if (navigator.appName=="Netscape") {				
+						self.find(str);
+					}
+					if (navigator.appName.indexOf("Microsoft")!=-1) {
+					   TRange=self.document.body.createTextRange();
+					   strFound=TRange.findText(str);
+					   if (strFound) TRange.select();
+					}
+				}			
+</script></head><body onload="find_string()"><h2>FIX.4.3 Component<br>Parties</h2><table class="HeaderTable"><tr><td class="MsgINDENT0Lines"></td><th class="MsgTagHdrContent">Tag or Component</th><th class="MsgFldHdrContent">Field Name</th><th class="MsgRqdHdrContent">Req'd</th><th class="MsgCmtHdrContent">Comments</th><th class="MsgDeprHdrContent">Depr.</th></tr></table><table class="BodyTable"><tr class="NotDepr"><td class="MsgGS0Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag453.html"><i>Repeating Group</i>&nbsp;453</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag453.html"><b>NoPartyIDs</b></a></td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"><span class="">
+         </span><p class=""><span class="">Repeating group below should contain unique combinations of PartyID, PartyIDSource, and PartyRole</span></p><span class="">
+      </span></td><td class="MsgDeprContent">&nbsp;</td></tr></table><table class="BodyTable"><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag448.html">448</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag448.html">PartyID</a></td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag447.html">447</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag447.html">PartyIDSource</a></td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag452.html">452</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag452.html">PartyRole</a></td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr><tr class="NotDepr"><td class="MsgINDENT1Lines"><img src="../../images/dummy.gif"></td><td class="MsgTagContent"><a target="tagFrame" href="tag523.html">523</a></td><td class="MsgFldContent"><a target="tagFrame" href="tag523.html">PartySubID</a></td><td class="MsgRqdContent">&nbsp;</td><td class="MsgCmtContent"></td><td class="MsgDeprContent">&nbsp;</td></tr></table><table class="HeaderTable"><tr><td class="MsgGE0Lines"></td><td class="MsgTagContent"><i>end Repeating Group</i></td><td class="MsgFldContent"></td><td class="MsgRqdContent"></td><td class="MsgCmtContent"></td><td class="MsgDeprContent"></td></tr></table><hr><hr>
+				Used in messages: <div class="TagUsedIn">[<A href="body_495774.html?find=Parties" target="mainFrame">Allocation</A>] [<A href="body_505280.html?find=Parties" target="mainFrame">AllocationAck</A>] [<A href="body_5352116.html?find=Parties" target="mainFrame">CrossOrderCancelReplaceRequest</A>] [<A href="body_5351117.html?find=Parties" target="mainFrame">CrossOrderCancelRequest</A>] [<A href="body_5756.html?find=Parties" target="mainFrame">ExecutionReport</A>] [<A href="body_5250105.html?find=Parties" target="mainFrame">MassQuote</A>] [<A href="body_515398.html?find=Parties" target="mainFrame">MassQuoteAcknowledgement</A>] [<A href="body_54506567.html?find=Parties" target="mainFrame">MultilegOrderCancelReplaceRequest</A>] [<A href="body_5350115.html?find=Parties" target="mainFrame">NewOrderCross</A>] [<A href="body_495369.html?find=Parties" target="mainFrame">NewOrderList</A>] [<A href="body_54496566.html?find=Parties" target="mainFrame">NewOrderMultileg</A>] [<A href="body_495268.html?find=Parties" target="mainFrame">NewOrderSingle</A>] [<A href="body_495571.html?find=Parties" target="mainFrame">OrderCancelReplaceRequest</A>] [<A href="body_495470.html?find=Parties" target="mainFrame">OrderCancelRequest</A>] [<A href="body_54536570.html?find=Parties" target="mainFrame">OrderMassStatusRequest</A>] [<A href="body_495672.html?find=Parties" target="mainFrame">OrderStatusRequest</A>] [<A href="body_505583.html?find=Parties" target="mainFrame">Quote</A>] [<A href="body_515190.html?find=Parties" target="mainFrame">QuoteCancel</A>] [<A href="body_54566573.html?find=Parties" target="mainFrame">QuoteStatusReport</A>] [<A href="body_515297.html?find=Parties" target="mainFrame">QuoteStatusRequest</A>] [<A href="body_5256111.html?find=Parties" target="mainFrame">RegistrationInstructions</A>] [<A href="body_5257112.html?find=Parties" target="mainFrame">RegistrationInstructionsResponse</A>] [<A href="body_505684.html?find=Parties" target="mainFrame">SettlementInstructions</A>] [<A href="body_54526569.html?find=Parties" target="mainFrame">TradeCaptureReport</A>] [<A href="body_54516568.html?find=Parties" target="mainFrame">TradeCaptureReportRequest</A>] </div><hr>						
+				Used in components: <div class="TagUsedIn"></div><p></p><p></p><table><tr><td class="Horiz" id="footer" colspan="2"><ul class="Menu"><li id="copyright">© 2007 FIX Protocol Limited</li><li><a href="http://www.fixprotocol.org/contact.shtml" target="_blank">Contact us</a></li><li><a href="http://www.fixprotocol.org/copyright.shtml" target="_blank">Copyright and Acceptable Use policy</a></li><li><a href="http://www.fixprotocol.org/privacy.shtml" target="_blank">Privacy policy</a></li></ul></td></tr></table></body></html>

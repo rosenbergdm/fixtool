@@ -1,0 +1,56 @@
+.TH FIX.5.0SP2 "" "" "Tag #712"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+712 (tag712.html)
+PosMaintAction (tag712.html)
+\@Actn
+int
+.PP
+Maintenance Action to be performed.
+1
+=
+.PP
+New - used to increment the overall transaction quantity
+2
+=
+.PP
+Replace - used to override the overall transaction quantity or
+specifi add messages based on the reference ID
+3
+=
+.PP
+Cancel - used to remove the overall transaction or specific add
+messages based on reference ID
+4
+=
+.PP
+Reverse - used to completelly back-out the transaction such that
+the transaction never existed
+.PP
+   *   *   *   *   *
+Used in messages:
+[PositionMaintenanceReport (body_55506577.html?find=PosMaintAction)]
+[PositionMaintenanceRequest (body_55496576.html?find=PosMaintAction)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

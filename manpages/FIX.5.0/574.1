@@ -1,0 +1,186 @@
+.TH FIX.5.0 "" "" "Tag #574"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+574 (tag574.html)
+MatchType (tag574.html)
+\@MtchTyp
+String
+.PP
+The point in the matching process at which this trade was matched.
+—\ General Purpose\ —
+60
+=
+.PP
+One-Party Privately Negotiated Trade Report
+61
+=
+.PP
+Two-Party Privately Negotiated Trade Report
+62
+=
+.PP
+Continuous Auto-match
+63
+=
+.PP
+Cross Auction
+64
+=
+.PP
+Counter-Order Selection
+65
+=
+.PP
+Call Auction
+—\ NASDAQ\ —
+M3
+=
+.PP
+ACT Accepted Trade
+M4
+=
+.PP
+ACT Default Trade
+M5
+=
+.PP
+ACT Default After M2
+M6
+=
+.PP
+ACT M6 Match
+—\ NYSE and AMEX\ —
+A1
+=
+.PP
+Exact match on Trade Date, Stock Symbol, Quantity, Price, Trade
+Type, and Special Trade Indicator plus four badges and execution
+time (within two-minute window)
+A2
+=
+.PP
+Exact match on Trade Date, Stock Symbol, Quantity, Price, Trade
+Type, and Special Trade Indicator, plus four badges
+A3
+=
+.PP
+Exact match on Trade Date, Stock Symbol, Quantity, Price, Trade
+Type, and Special Trade Indicator, plus two badges and execution
+time (within two-minute window)
+A4
+=
+.PP
+Exact match on Trade Date, Stock Symbol, Quantity, Price, Trade
+Type, and Special Trade Indicator, plus two badges
+A5
+=
+.PP
+Exact match on Trade Date, Stock Symbol, Quantity, Price,
+TradeType, and Special Trade Indicator plus execution time (within
+two-minute window)
+AQ
+=
+.PP
+Compared records resulting from stamped advisories or specialist
+accepts/pair-offs
+S1
+=
+.PP
+Summarized match using A1 exact match criteria except quantity is
+summaried
+S2
+=
+.PP
+Summarized match using A2 exact match criteria except quantity is
+summarized
+S3
+=
+.PP
+Summarized match using A3 exact match criteria except quantity is
+summarized
+S4
+=
+.PP
+Summarized match using A4 exact match criteria except quantity is
+summarized
+S5
+=
+.PP
+Summarized match using A5 exact match criteria except quantity is
+summarized
+—\ NYSE, AMEX and NASDAQ\ —
+M1
+=
+.PP
+Exact match on Trade Date, Stock Symbol, Quantity, Price, Trade
+Type, and Special Trade Indicator minus badges And times: ACT M1
+match
+M2
+=
+.PP
+Summarized match minus badges and times: ACT M2 Match
+MT
+=
+.PP
+OCS Locked In: Non-ACT
+—\ OMX Order Routing\ —
+1
+=
+.PP
+One-Party Trade Report (privately negotiated trade)
+2
+=
+.PP
+Two-Party Trade Report (privately negotiated trade)
+3
+=
+.PP
+Confirmed Trade Report (reporting from recognized markets)
+4
+=
+.PP
+Auto-match
+5
+=
+.PP
+Cross Auction
+6
+=
+.PP
+Counter-Order Selection
+7
+=
+.PP
+Call Auction
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=MatchType)]
+[AllocationInstructionAlert (body_57566677.html?find=MatchType)]
+[AllocationReport (body_55566583.html?find=MatchType)]
+[ExecutionReport (body_5756.html?find=MatchType)]
+[TradeCaptureReport (body_54526569.html?find=MatchType)]
+[TradeCaptureReportAck (body_55556582.html?find=MatchType)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

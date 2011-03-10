@@ -1,0 +1,74 @@
+.TH FIX.4.4 "" "" "Tag #81"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+81 (tag81.html)
+ProcessCode (tag81.html)
+\@ProcCode
+char
+.PP
+Processing code for sub-account. Absence of this field in
+AllocAccount (79) / AllocPrice (366) /AllocQty (80) / ProcessCode
+instance indicates regular trade.
+0
+=
+.PP
+Regular
+1
+=
+.PP
+SoftDollar
+2
+=
+.PP
+StepIn
+3
+=
+.PP
+StepOut
+4
+=
+.PP
+StepInSoft
+5
+=
+.PP
+StepOutSoft
+6
+=
+.PP
+PlanSponsor
+.PP
+   *   *   *   *   *
+Used in messages:
+[Confirmation (body_55486575.html?find=ProcessCode)]
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=ProcessCode)]
+[MultilegOrderCancelReplace (body_54506567.html?find=ProcessCode)]
+[NewOrderCross (body_5350115.html?find=ProcessCode)]
+[NewOrderMultileg (body_54496566.html?find=ProcessCode)]
+[NewOrderSingle (body_495268.html?find=ProcessCode)]
+.PP
+   *   *   *   *   *
+Used in components:
+[AllocGrp (body_50484851.html?find=ProcessCode)]
+[ListOrdGrp (body_50485148.html?find=ProcessCode)]
+[TrdCapRptSideGrp (body_50485449.html?find=ProcessCode)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

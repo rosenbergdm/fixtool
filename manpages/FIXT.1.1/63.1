@@ -1,0 +1,75 @@
+.TH FIX.4.1 "" "" "Tag #63"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+63 (tag63.html)
+SettlmntTyp (tag63.html)
+char
+.PP
+Indicates order settlement period. Absence of this field is
+interpreted as Regular. Regular is defined as the default
+settlement period for the particular security on the exchange of
+execution.
+0
+=
+.PP
+Regular
+1
+=
+.PP
+Cash
+2
+=
+.PP
+Next Day
+3
+=
+.PP
+T+2
+4
+=
+.PP
+T+3
+5
+=
+.PP
+T+4
+6
+=
+.PP
+Future
+7
+=
+.PP
+When Issued
+8
+=
+.PP
+Sellers Option
+9
+=
+.PP
+T+ 5
+.PP
+   *   *   *   *   *
+Used in messages:
+[Allocation (body_495774.html?find=SettlmntTyp)]
+[Execution Report (body_5756.html?find=SettlmntTyp)]
+[Order - List (body_495369.html?find=SettlmntTyp)]
+[Order - Single (body_495268.html?find=SettlmntTyp)]
+[Order Cancel/Replace Request (body_495571.html?find=SettlmntTyp)]
+.PP
+   *   *   *   *   *
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

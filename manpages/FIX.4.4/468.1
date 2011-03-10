@@ -1,0 +1,59 @@
+.TH FIX.4.4 "" "" "Tag #468"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+468 (tag468.html)
+RoundingDirection (tag468.html)
+\@RndDir
+char
+.PP
+Specifies which direction to round For CIV – indicates whether or
+not the quantity of shares/units is to be rounded and in which
+direction where CashOrdQty (52) or (for CIV only) OrderPercent (56)
+are specified on an order.
+.PP
+The default is for rounding to be at the discretion of the
+executing broker or fund manager.
+.PP
+e.g. for an order specifying CashOrdQty or OrderPercent if the
+calculated number of shares/units was 325.76 and RoundingModulus
+(469) was 0 – "round down" would give 320 units, "round up" would
+give 330 units and "round to nearest" would give 320 units.
+0
+=
+.PP
+RoundNearest
+1
+=
+.PP
+RoundDown
+2
+=
+.PP
+RoundUp
+.PP
+   *   *   *   *   *
+Used in messages:
+.PP
+   *   *   *   *   *
+Used in components:
+[OrderQtyData (body_49484949.html?find=RoundingDirection)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

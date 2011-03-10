@@ -1,0 +1,34 @@
+.TH FIX.4.2 "" "" "Tag #68"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+68 (tag68.html)
+TotNoOrders(formerly named: ListNoOrds) (tag68.html)
+int
+.PP
+Total number of list order entries across all messages. Should be
+the sum of all NoOrders in each message that has repeating list
+order entries related to the same ListID. Used to support
+fragmentation.
+.PP
+(Prior to FIX 4.2 this field was named "ListNoOrds")
+.PP
+   *   *   *   *   *
+Used in messages:
+[List Status (body_505178.html?find=TotNoOrders(formerly%20named:%20ListNoOrds))]
+[Order - List (body_495369.html?find=TotNoOrders(formerly%20named:%20ListNoOrds))]
+.PP
+   *   *   *   *   *
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

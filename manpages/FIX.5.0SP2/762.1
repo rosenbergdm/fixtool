@@ -1,0 +1,46 @@
+.TH FIX.5.0SP2 "" "" "Tag #762"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+762 (tag762.html)
+SecuritySubType (tag762.html)
+\@SubTyp
+String
+.PP
+Sub-type qualification/identification of the SecurityType. As an
+example for SecurityType(167)="REPO", the SecuritySubType="General
+Collateral" can be used to further specify the type of REPO.
+.PP
+If SecuritySubType is used then SecurityType is required.
+.PP
+For SecurityType="MLEG" a name of the option or futures strategy
+name can be specified, such as "Calendar", "Vertical", "Butterfly".
+.PP
+   *   *   *   *   *
+Used in messages:
+[DerivativeSecurityListRequest (body_5357122.html?find=SecuritySubType)]
+[SecurityTypeRequest (body_5353118.html?find=SecuritySubType)]
+.PP
+   *   *   *   *   *
+Used in components:
+[Instrument (body_49484851.html?find=SecuritySubType)]
+[SecTypesGrp (body_50485354.html?find=SecuritySubType)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

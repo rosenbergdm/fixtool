@@ -1,0 +1,206 @@
+.TH FIX.5.0 "" "" "Tag #829"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+829 (tag829.html)
+TrdSubType (tag829.html)
+\@TrdSubTyp
+int
+.PP
+Further qualification to the trade type
+0
+=
+.PP
+CMTA
+1
+=
+.PP
+Internal transfer or adjustment
+2
+=
+.PP
+External transfer or transfer of account
+3
+=
+.PP
+Reject for submitting side
+4
+=
+.PP
+Advisory for contra side
+5
+=
+.PP
+Offset due to an allocation
+6
+=
+.PP
+Onset dut to an allocation
+7
+=
+.PP
+Differential spread
+8
+=
+.PP
+Implied spread leg executed against an outright
+9
+=
+.PP
+Transaction from exercise
+10
+=
+.PP
+Transaction from assignment
+11
+=
+.PP
+ACATS
+—\ MiFID Values\ —
+14
+=
+.PP
+AI (Automated input facility disabled in response to an exchange
+request.)
+15
+=
+.PP
+B (Transaction between two member firms where neither member firm
+is registered as a market maker in the security in question and
+neither is a designated fund manager. Also used by broker dealers
+when dealing with another broker which is not a member firm.
+Non-order book securities only.)
+16
+=
+.PP
+K (Transaction using block trade facility.)
+17
+=
+.PP
+LC (Correction submitted more than three days after publication of
+the original trade report.)
+18
+=
+.PP
+M (Transaction, other than a transaction resulting from a stock
+swap or stock switch, between two market makers registered in that
+security including IDB or a public display system trades. Non-order
+book securities only.)
+19
+=
+.PP
+N (Non-protected portfolio transaction or a fully disclosed
+portfolio transaction)
+20
+=
+.PP
+NM ( i) transaction where Exchange has granted permission for
+non-publication
+.PP
+ii)IDB is reporting as seller
+.PP
+iii) submitting a transaction report to the Exchange, where the
+transaction report is not also a trade report.)
+21
+=
+.PP
+NR (Non-risk transaction in a SEATS security other than an AIM
+security)
+22
+=
+.PP
+P (Protected portfolio transaction or a worked principal agreement
+to effect a portfolio transaction which includes order book
+securities)
+23
+=
+.PP
+PA (Protected transaction notification)
+24
+=
+.PP
+PC (Contra trade for transaction which took place on a previous day
+and which was automatically executed on the Exchange trading
+system)
+25
+=
+.PP
+PN (Worked principal notification for a portfolio transaction which
+includes order book securities)
+26
+=
+.PP
+R ( (i) riskless principal transaction between non-members where
+the buying and selling transactions are executed at different
+prices or on different terms (requires a trade report with trade
+type indicator R for each transaction)
+.PP
+(ii) market maker is reporting all the legs of a riskless principal
+transaction where the buying and selling transactions are executed
+at different prices (requires a trade report with trade type
+indicator R for each transaction)or
+.PP
+(iii) market maker is reporting the onward leg of a riskless
+principal transaction where the legs are executed at different
+prices, and another market maker has submitted a trade report using
+trade type indicator M for the first leg (this requires a single
+trade report with trade type indicator R).)
+27
+=
+.PP
+RO (Transaction which resulted from the exercise of a traditional
+option or a stock-settled covered warrant)
+28
+=
+.PP
+RT (Risk transaction in a SEATS security, (excluding AIM security)
+reported by a market maker registered in that security)
+29
+=
+.PP
+SW (Transactions resulting from stock swap or a stock switch (one
+report is required for each line of stock))
+30
+=
+.PP
+T (If reporting a single protected transaction)
+31
+=
+.PP
+WN (Worked principal notification for a single order book security)
+32
+=
+.PP
+WT (Worked principal transaction (other than a portfolio
+transaction))
+.PP
+   *   *   *   *   *
+Used in messages:
+[AllocationInstruction (body_495774.html?find=TrdSubType)]
+[AllocationInstructionAlert (body_57566677.html?find=TrdSubType)]
+[AllocationReport (body_55566583.html?find=TrdSubType)]
+[TradeCaptureReport (body_54526569.html?find=TrdSubType)]
+[TradeCaptureReportAck (body_55556582.html?find=TrdSubType)]
+[TradeCaptureReportRequest (body_54516568.html?find=TrdSubType)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

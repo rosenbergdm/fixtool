@@ -1,0 +1,54 @@
+.TH FIX.5.0SP2 "" "" "Tag #725"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+725 (tag725.html)
+ResponseTransportType (tag725.html)
+\@RspTransportTyp
+int
+.PP
+Identifies how the response to the request should be transmitted.
+.PP
+Details specified via ResponseDestination (726).
+0
+=
+.PP
+Inband - transport the request was sent over (default)
+1
+=
+.PP
+Out of Band - pre-arranged out-of-band delivery mechanizm (i.e.
+FTP, HTTP, NDM, etc.) between counterparties. Details specified via
+ResponseDestination (726).
+.PP
+   *   *   *   *   *
+Used in messages:
+[CollateralInquiry (body_56556666.html?find=ResponseTransportType)]
+[CollateralInquiryAck (body_57506671.html?find=ResponseTransportType)]
+[RequestForPositions (body_55516578.html?find=ResponseTransportType)]
+[RequestForPositionsAck (body_55526579.html?find=ResponseTransportType)]
+[TradeCaptureReportAck (body_55556582.html?find=ResponseTransportType)]
+[TradeCaptureReportRequest (body_54516568.html?find=ResponseTransportType)]
+[TradeCaptureReportRequestAck (body_55546581.html?find=ResponseTransportType)]
+.PP
+   *   *   *   *   *
+Used in components:
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

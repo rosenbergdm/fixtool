@@ -1,0 +1,47 @@
+.TH FIX.5.0 "" "" "Tag #1089"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+1089 (tag1089.html)
+MatchIncrement (tag1089.html)
+\@MtchInc
+Qty
+.PP
+Allows orders to specify a minimum quantity that applies to every
+execution (one execution could be for multiple counter-orders). The
+order may still fill against smaller orders, but the cumulative
+quantity of the execution must be in multiples of the
+MatchIncrement.
+.PP
+   *   *   *   *   *
+Used in messages:
+[CrossOrderCancelReplaceRequest (body_5351116.html?find=MatchIncrement)]
+[ExecutionReport (body_5756.html?find=MatchIncrement)]
+[MultilegOrderCancelReplace (body_54506567.html?find=MatchIncrement)]
+[NewOrderCross (body_5350115.html?find=MatchIncrement)]
+[NewOrderMultileg (body_54496566.html?find=MatchIncrement)]
+[NewOrderSingle (body_495268.html?find=MatchIncrement)]
+[OrderCancelReplaceRequest (body_495571.html?find=MatchIncrement)]
+.PP
+   *   *   *   *   *
+Used in components:
+[ListOrdGrp (body_50485148.html?find=MatchIncrement)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

@@ -1,0 +1,44 @@
+.TH FIX.4.2 "" "" "Tag #414"
+Tag
+Field Name
+Data Type
+Description
+Depr.
+Valid values
+414 (tag414.html)
+ProgRptReqs (tag414.html)
+int
+.PP
+Code to identify the desired frequency of progress reports.
+1
+=
+.PP
+BuySide explicitly requests status using StatusRequest (Default)
+The sell-side firm can however, send a DONE status List Status
+Response in an unsolicited fashion
+2
+=
+.PP
+SellSide periodically sends status using ListStatus. Period
+optionally specified in ProgressPeriod
+3
+=
+.PP
+Real-time execution reports (to be discouraged)
+.PP
+   *   *   *   *   *
+Used in messages:
+[Bid Request (body_5252107.html?find=ProgRptReqs)]
+[Order - List (body_495369.html?find=ProgRptReqs)]
+.PP
+   *   *   *   *   *
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)

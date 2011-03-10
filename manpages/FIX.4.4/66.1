@@ -1,0 +1,53 @@
+.TH FIX.4.4 "" "" "Tag #66"
+Tag
+Field Name
+XML Name
+Data Type
+Description
+Depr.
+Valid values
+66 (tag66.html)
+ListID (tag66.html)
+\@ListID
+String
+.PP
+Unique identifier for list as assigned by institution, used to
+associate multiple individual orders. Uniqueness must be guaranteed
+within a single trading day. Firms which generate multi-day orders
+should consider embedding a date within the ListID field to assure
+uniqueness across days.
+.PP
+   *   *   *   *   *
+Used in messages:
+[ExecutionReport (body_5756.html?find=ListID)]
+[ListCancelRequest (body_504875.html?find=ListID)]
+[ListExecute (body_504976.html?find=ListID)]
+[ListStatus (body_505178.html?find=ListID)]
+[ListStatusRequest (body_505077.html?find=ListID)]
+[ListStrikePrice (body_5254109.html?find=ListID)]
+[NewOrderList (body_495369.html?find=ListID)]
+[OrderCancelReject (body_494857.html?find=ListID)]
+[OrderCancelReplaceRequest (body_495571.html?find=ListID)]
+[OrderCancelRequest (body_495470.html?find=ListID)]
+.PP
+   *   *   *   *   *
+Used in components:
+[BidCompReqGrp (body_50484852.html?find=ListID)]
+[BidCompRspGrp (body_50484853.html?find=ListID)]
+[OrdAllocGrp (body_50485154.html?find=ListID)]
+[TrdCapRptSideGrp (body_50485449.html?find=ListID)]
+
+.PD 0
+.P
+.PD
+
+.PP
+.PP
+.IP \[bu] 2
+© 2007 FIX Protocol Limited
+.IP \[bu] 2
+Contact us (http://www.fixprotocol.org/contact.shtml)
+.IP \[bu] 2
+Copyright and Acceptable Use policy (http://www.fixprotocol.org/copyright.shtml)
+.IP \[bu] 2
+Privacy policy (http://www.fixprotocol.org/privacy.shtml)
